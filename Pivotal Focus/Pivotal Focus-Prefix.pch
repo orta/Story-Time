@@ -3,5 +3,25 @@
 //
 
 #ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
+
+#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+
+// libs
+#import "BlocksKit.h"
+#import "ConciseKit.h"
+#import <RestKit/RestKit.h>
+
+// models
+#import "Server.h"
+#import "Ticket.h"
+#import "Mixer.h"
+
+// ORM Models
+#import "ORMObject.h"
+#import "Project.h"
+#import "ProjectCollection.h"
+
+// constants
+#import "Defaults.h"
 #endif

@@ -7,28 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6032690A14F95035000AA67D /* ProjectCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032690914F95035000AA67D /* ProjectCollection.m */; };
 		60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE792714F90822002A2AA9 /* Cocoa.framework */; };
 		60AE793214F90822002A2AA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793014F90822002A2AA9 /* InfoPlist.strings */; };
 		60AE793414F90822002A2AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE793314F90822002A2AA9 /* main.m */; };
 		60AE793814F90822002A2AA9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793614F90822002A2AA9 /* Credits.rtf */; };
 		60AE793B14F90822002A2AA9 /* ORAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE793A14F90822002A2AA9 /* ORAppDelegate.m */; };
 		60AE793E14F90822002A2AA9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793C14F90822002A2AA9 /* MainMenu.xib */; };
+		60AE797114F911C0002A2AA9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 60AE797014F911C0002A2AA9 /* Podfile */; };
+		60AE798E14F91307002A2AA9 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE798D14F91307002A2AA9 /* Ticket.m */; };
+		60AE799814F913FE002A2AA9 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE799714F913FE002A2AA9 /* Server.m */; };
+		60AE79B414F9156D002A2AA9 /* PivotalTrackerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B314F9156D002A2AA9 /* PivotalTrackerServer.m */; };
+		60AE79B814F91656002A2AA9 /* Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B714F91656002A2AA9 /* Mixer.m */; };
+		60AE7A0914F9203E002A2AA9 /* PTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A0814F9203E002A2AA9 /* PTServer.m */; };
+		60AE7A0A14F920E6002A2AA9 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE7A0114F91FF0002A2AA9 /* RestKit.framework */; };
+		60AE7A3614F92BA1002A2AA9 /* Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A3514F92BA1002A2AA9 /* Defaults.m */; };
+		60AE7A4E14F92DD8002A2AA9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A4D14F92DD8002A2AA9 /* Project.m */; };
+		60CD6E3B14F931D3004CC17D /* ORMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD6E3A14F931D3004CC17D /* ORMObject.m */; };
+		83AC9DB4054647E99E4504EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE26ACD07FBD4E4793CA1CB0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		60AE79FC14F91FF0002A2AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		60AE79FE14F91FF0002A2AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		60AE7A0014F91FF0002A2AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		60AE7A0214F91FF0002A2AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		60AE7A0514F92001002A2AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160E61145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		08B6B8085EF9480F93353D30 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6032690814F95035000AA67D /* ProjectCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectCollection.h; path = ORM/ProjectCollection.h; sourceTree = "<group>"; };
+		6032690914F95035000AA67D /* ProjectCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectCollection.m; path = ORM/ProjectCollection.m; sourceTree = "<group>"; };
 		60AE792314F90822002A2AA9 /* Pivotal Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pivotal Focus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE792714F90822002A2AA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		60AE792A14F90822002A2AA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		60AE792B14F90822002A2AA9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		60AE792C14F90822002A2AA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		60AE792F14F90822002A2AA9 /* Pivotal Focus-Info.plist */ = {isa = PBXFileReference; path = "Pivotal Focus-Info.plist"; sourceTree = "<group>"; };
+		60AE792F14F90822002A2AA9 /* Pivotal Focus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pivotal Focus-Info.plist"; sourceTree = "<group>"; };
 		60AE793114F90822002A2AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60AE793314F90822002A2AA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		60AE793514F90822002A2AA9 /* Pivotal Focus-Prefix.pch */ = {isa = PBXFileReference; path = "Pivotal Focus-Prefix.pch"; sourceTree = "<group>"; };
+		60AE793514F90822002A2AA9 /* Pivotal Focus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pivotal Focus-Prefix.pch"; sourceTree = "<group>"; };
 		60AE793714F90822002A2AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		60AE793914F90822002A2AA9 /* ORAppDelegate.h */ = {isa = PBXFileReference; path = ORAppDelegate.h; sourceTree = "<group>"; };
+		60AE793914F90822002A2AA9 /* ORAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORAppDelegate.h; sourceTree = "<group>"; };
 		60AE793A14F90822002A2AA9 /* ORAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORAppDelegate.m; sourceTree = "<group>"; };
 		60AE793D14F90822002A2AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		60AE797014F911C0002A2AA9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		60AE798C14F91307002A2AA9 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		60AE798D14F91307002A2AA9 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerDelegate_Protocol.h; sourceTree = "<group>"; };
+		60AE799614F913FE002A2AA9 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		60AE799714F913FE002A2AA9 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		60AE79B214F9156D002A2AA9 /* PivotalTrackerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PivotalTrackerServer.h; path = "Pivotal Focus/Servers/PivotalTrackerServer.h"; sourceTree = SOURCE_ROOT; };
+		60AE79B314F9156D002A2AA9 /* PivotalTrackerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PivotalTrackerServer.m; path = "Pivotal Focus/Servers/PivotalTrackerServer.m"; sourceTree = SOURCE_ROOT; };
+		60AE79B614F91656002A2AA9 /* Mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer.h; sourceTree = "<group>"; };
+		60AE79B714F91656002A2AA9 /* Mixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixer.m; sourceTree = "<group>"; };
+		60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		60AE7A0714F9203E002A2AA9 /* PTServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTServer.h; path = "Pivotal Focus/Servers/PTServer.h"; sourceTree = SOURCE_ROOT; };
+		60AE7A0814F9203E002A2AA9 /* PTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTServer.m; path = "Pivotal Focus/Servers/PTServer.m"; sourceTree = SOURCE_ROOT; };
+		60AE7A3414F92BA1002A2AA9 /* Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defaults.h; path = Constants/Defaults.h; sourceTree = "<group>"; };
+		60AE7A3514F92BA1002A2AA9 /* Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Defaults.m; path = Constants/Defaults.m; sourceTree = "<group>"; };
+		60AE7A4C14F92DD8002A2AA9 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = ORM/Project.h; sourceTree = "<group>"; };
+		60AE7A4D14F92DD8002A2AA9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = ORM/Project.m; sourceTree = "<group>"; };
+		60CD6E3914F931D3004CC17D /* ORMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORMObject.h; path = ORM/ORMObject.h; sourceTree = "<group>"; };
+		60CD6E3A14F931D3004CC17D /* ORMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORMObject.m; path = ORM/ORMObject.m; sourceTree = "<group>"; };
+		EE26ACD07FBD4E4793CA1CB0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AE7A0A14F920E6002A2AA9 /* RestKit.framework in Frameworks */,
 				60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */,
+				83AC9DB4054647E99E4504EE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,9 +121,11 @@
 		60AE791814F90822002A2AA9 = {
 			isa = PBXGroup;
 			children = (
+				60AE797014F911C0002A2AA9 /* Podfile */,
 				60AE792D14F90822002A2AA9 /* Pivotal Focus */,
 				60AE792614F90822002A2AA9 /* Frameworks */,
 				60AE792414F90822002A2AA9 /* Products */,
+				08B6B8085EF9480F93353D30 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +140,10 @@
 		60AE792614F90822002A2AA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */,
 				60AE792714F90822002A2AA9 /* Cocoa.framework */,
 				60AE792914F90822002A2AA9 /* Other Frameworks */,
+				EE26ACD07FBD4E4793CA1CB0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,6 +161,9 @@
 		60AE792D14F90822002A2AA9 /* Pivotal Focus */ = {
 			isa = PBXGroup;
 			children = (
+				60AE7A3314F92B89002A2AA9 /* Constants */,
+				60AE795A14F9090D002A2AA9 /* Models */,
+				60AE795C14F9091D002A2AA9 /* Mixers */,
 				60AE793914F90822002A2AA9 /* ORAppDelegate.h */,
 				60AE793A14F90822002A2AA9 /* ORAppDelegate.m */,
 				60AE793C14F90822002A2AA9 /* MainMenu.xib */,
@@ -102,6 +184,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		60AE795A14F9090D002A2AA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60AE799614F913FE002A2AA9 /* Server.h */,
+				60AE799714F913FE002A2AA9 /* Server.m */,
+				60AE798C14F91307002A2AA9 /* Ticket.h */,
+				60AE798D14F91307002A2AA9 /* Ticket.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		60AE795C14F9091D002A2AA9 /* Mixers */ = {
+			isa = PBXGroup;
+			children = (
+				60AE7A1A14F924C7002A2AA9 /* PivotalTracker ORM */,
+				60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocol.h */,
+				60AE79B614F91656002A2AA9 /* Mixer.h */,
+				60AE79B714F91656002A2AA9 /* Mixer.m */,
+				60AE79B214F9156D002A2AA9 /* PivotalTrackerServer.h */,
+				60AE79B314F9156D002A2AA9 /* PivotalTrackerServer.m */,
+			);
+			path = Mixers;
+			sourceTree = "<group>";
+		};
+		60AE79F314F91FF0002A2AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60AE79FD14F91FF0002A2AA9 /* libRestKit.a */,
+				60AE79FF14F91FF0002A2AA9 /* RestKitTests.octest */,
+				60AE7A0114F91FF0002A2AA9 /* RestKit.framework */,
+				60AE7A0314F91FF0002A2AA9 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60AE7A1A14F924C7002A2AA9 /* PivotalTracker ORM */ = {
+			isa = PBXGroup;
+			children = (
+				60AE7A1B14F924E9002A2AA9 /* Models */,
+				60AE7A0714F9203E002A2AA9 /* PTServer.h */,
+				60AE7A0814F9203E002A2AA9 /* PTServer.m */,
+			);
+			name = "PivotalTracker ORM";
+			sourceTree = "<group>";
+		};
+		60AE7A1B14F924E9002A2AA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60CD6E3914F931D3004CC17D /* ORMObject.h */,
+				60CD6E3A14F931D3004CC17D /* ORMObject.m */,
+				60AE7A4C14F92DD8002A2AA9 /* Project.h */,
+				60AE7A4D14F92DD8002A2AA9 /* Project.m */,
+				6032690814F95035000AA67D /* ProjectCollection.h */,
+				6032690914F95035000AA67D /* ProjectCollection.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		60AE7A3314F92B89002A2AA9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				60AE7A3414F92BA1002A2AA9 /* Defaults.h */,
+				60AE7A3514F92BA1002A2AA9 /* Defaults.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,10 +261,12 @@
 				60AE791F14F90822002A2AA9 /* Sources */,
 				60AE792014F90822002A2AA9 /* Frameworks */,
 				60AE792114F90822002A2AA9 /* Resources */,
+				C62413DD4E164FA499BA0756 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				60AE7A0614F92001002A2AA9 /* PBXTargetDependency */,
 			);
 			name = "Pivotal Focus";
 			productName = "Pivotal Focus";
@@ -141,12 +292,49 @@
 			mainGroup = 60AE791814F90822002A2AA9;
 			productRefGroup = 60AE792414F90822002A2AA9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 60AE79F314F91FF0002A2AA9 /* Products */;
+					ProjectRef = 60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				60AE792214F90822002A2AA9 /* Pivotal Focus */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		60AE79FD14F91FF0002A2AA9 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 60AE79FC14F91FF0002A2AA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60AE79FF14F91FF0002A2AA9 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 60AE79FE14F91FF0002A2AA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60AE7A0114F91FF0002A2AA9 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 60AE7A0014F91FF0002A2AA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60AE7A0314F91FF0002A2AA9 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 60AE7A0214F91FF0002A2AA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		60AE792114F90822002A2AA9 /* Resources */ = {
@@ -156,10 +344,28 @@
 				60AE793214F90822002A2AA9 /* InfoPlist.strings in Resources */,
 				60AE793814F90822002A2AA9 /* Credits.rtf in Resources */,
 				60AE793E14F90822002A2AA9 /* MainMenu.xib in Resources */,
+				60AE797114F911C0002A2AA9 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C62413DD4E164FA499BA0756 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60AE791F14F90822002A2AA9 /* Sources */ = {
@@ -168,10 +374,27 @@
 			files = (
 				60AE793414F90822002A2AA9 /* main.m in Sources */,
 				60AE793B14F90822002A2AA9 /* ORAppDelegate.m in Sources */,
+				60AE798E14F91307002A2AA9 /* Ticket.m in Sources */,
+				60AE799814F913FE002A2AA9 /* Server.m in Sources */,
+				60AE79B414F9156D002A2AA9 /* PivotalTrackerServer.m in Sources */,
+				60AE79B814F91656002A2AA9 /* Mixer.m in Sources */,
+				60AE7A0914F9203E002A2AA9 /* PTServer.m in Sources */,
+				60AE7A3614F92BA1002A2AA9 /* Defaults.m in Sources */,
+				60AE7A4E14F92DD8002A2AA9 /* Project.m in Sources */,
+				60CD6E3B14F931D3004CC17D /* ORMObject.m in Sources */,
+				6032690A14F95035000AA67D /* ProjectCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60AE7A0614F92001002A2AA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKitFramework;
+			targetProxy = 60AE7A0514F92001002A2AA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		60AE793014F90822002A2AA9 /* InfoPlist.strings */ = {
@@ -250,22 +473,32 @@
 		};
 		60AE794214F90822002A2AA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B6B8085EF9480F93353D30 /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Pivotal Focus/Pivotal Focus-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		60AE794314F90822002A2AA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B6B8085EF9480F93353D30 /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Pivotal Focus/Pivotal Focus-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -289,6 +522,7 @@
 				60AE794314F90822002A2AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

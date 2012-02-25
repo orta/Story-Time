@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0008844A1491AE4900552AB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051A0451481BE160089CC41 /* Foundation.framework */; };
+		001ED6551491B143006EE0B2 /* A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0039561C148EE28600FA51A8 /* A2BlockDelegate.m */; };
+		001ED6571491B146006EE0B2 /* A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F6DC1481CDD500532784 /* A2DynamicDelegate.m */; };
+		001ED6581491B148006EE0B2 /* A2BlockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0039561B148EE28600FA51A8 /* A2BlockDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		001ED6591491B14A006EE0B2 /* A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0038F6DB1481CDD500532784 /* A2DynamicDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0051A0441481BE160089CC41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051A0431481BE160089CC41 /* UIKit.framework */; };
+		0051A0461481BE160089CC41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051A0451481BE160089CC41 /* Foundation.framework */; };
+		0051A0481481BE160089CC41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051A0471481BE160089CC41 /* CoreGraphics.framework */; };
+		0051A0501481BE160089CC41 /* Demo-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A04F1481BE160089CC41 /* Demo-main.m */; };
+		0051A0541481BE160089CC41 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051A0531481BE160089CC41 /* DDAppDelegate.m */; };
+		0071BC5314A2C87200D7F4F8 /* A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0039561C148EE28600FA51A8 /* A2BlockDelegate.m */; };
+		0071BC5414A2C87300D7F4F8 /* A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F6DC1481CDD500532784 /* A2DynamicDelegate.m */; };
+		0071BC5514A2C88300D7F4F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051A0451481BE160089CC41 /* Foundation.framework */; };
+		0071BC5614A2C88700D7F4F8 /* A2BlockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0039561B148EE28600FA51A8 /* A2BlockDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0071BC5714A2C88900D7F4F8 /* A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0038F6DB1481CDD500532784 /* A2DynamicDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00F6D21B149968E70003DEAE /* libA2DynamicDelegate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 000884491491AE4900552AB0 /* libA2DynamicDelegate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00F6D21814995D3C0003DEAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0051A0361481BE160089CC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000884481491AE4900552AB0;
+			remoteInfo = "iOS Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000884491491AE4900552AB0 /* libA2DynamicDelegate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libA2DynamicDelegate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		000884551491AE9500552AB0 /* iOS Library-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Library-Prefix.pch"; sourceTree = "<group>"; };
+		00328C2814A2C97A00F4A1F6 /* OS X Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OS X Framework-Info.plist"; sourceTree = "<group>"; };
+		0038F6DB1481CDD500532784 /* A2DynamicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2DynamicDelegate.h; sourceTree = SOURCE_ROOT; };
+		0038F6DC1481CDD500532784 /* A2DynamicDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2DynamicDelegate.m; sourceTree = SOURCE_ROOT; };
+		0039561B148EE28600FA51A8 /* A2BlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2BlockDelegate.h; sourceTree = SOURCE_ROOT; };
+		0039561C148EE28600FA51A8 /* A2BlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2BlockDelegate.m; sourceTree = SOURCE_ROOT; };
+		0051A03F1481BE160089CC41 /* A2DD Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A2DD Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0051A0431481BE160089CC41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0051A0451481BE160089CC41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0051A0471481BE160089CC41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0051A04B1481BE160089CC41 /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		0051A04F1481BE160089CC41 /* Demo-main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Demo-main.m"; sourceTree = "<group>"; };
+		0051A0511481BE160089CC41 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		0051A0521481BE160089CC41 /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
+		0051A0531481BE160089CC41 /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
+		0071BC4214A2C74D00D7F4F8 /* A2DynamicDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = A2DynamicDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0071BC5114A2C7A200D7F4F8 /* OS X Framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OS X Framework-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000884461491AE4900552AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0008844A1491AE4900552AB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0051A03C1481BE160089CC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0051A0481481BE160089CC41 /* CoreGraphics.framework in Frameworks */,
+				0051A0461481BE160089CC41 /* Foundation.framework in Frameworks */,
+				0051A0441481BE160089CC41 /* UIKit.framework in Frameworks */,
+				00F6D21B149968E70003DEAE /* libA2DynamicDelegate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0071BC3E14A2C74D00D7F4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0071BC5514A2C88300D7F4F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0051A0341481BE160089CC41 = {
+			isa = PBXGroup;
+			children = (
+				0051A0491481BE160089CC41 /* A2DynamicDelegate */,
+				0051A04A1481BE160089CC41 /* Supporting Files */,
+				0051A0421481BE160089CC41 /* Frameworks */,
+				0051A0401481BE160089CC41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0051A0401481BE160089CC41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0051A03F1481BE160089CC41 /* A2DD Demo.app */,
+				000884491491AE4900552AB0 /* libA2DynamicDelegate.a */,
+				0071BC4214A2C74D00D7F4F8 /* A2DynamicDelegate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0051A0421481BE160089CC41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0051A0471481BE160089CC41 /* CoreGraphics.framework */,
+				0051A0451481BE160089CC41 /* Foundation.framework */,
+				0051A0431481BE160089CC41 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0051A0491481BE160089CC41 /* A2DynamicDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0039561B148EE28600FA51A8 /* A2BlockDelegate.h */,
+				0039561C148EE28600FA51A8 /* A2BlockDelegate.m */,
+				0038F6DB1481CDD500532784 /* A2DynamicDelegate.h */,
+				0038F6DC1481CDD500532784 /* A2DynamicDelegate.m */,
+			);
+			name = A2DynamicDelegate;
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		0051A04A1481BE160089CC41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0051A0521481BE160089CC41 /* DDAppDelegate.h */,
+				0051A0531481BE160089CC41 /* DDAppDelegate.m */,
+				0051A04B1481BE160089CC41 /* Demo-Info.plist */,
+				0051A04F1481BE160089CC41 /* Demo-main.m */,
+				0051A0511481BE160089CC41 /* Demo-Prefix.pch */,
+				000884551491AE9500552AB0 /* iOS Library-Prefix.pch */,
+				00328C2814A2C97A00F4A1F6 /* OS X Framework-Info.plist */,
+				0071BC5114A2C7A200D7F4F8 /* OS X Framework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		000884471491AE4900552AB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001ED6591491B14A006EE0B2 /* A2DynamicDelegate.h in Headers */,
+				001ED6581491B148006EE0B2 /* A2BlockDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0071BC3F14A2C74D00D7F4F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0071BC5614A2C88700D7F4F8 /* A2BlockDelegate.h in Headers */,
+				0071BC5714A2C88900D7F4F8 /* A2DynamicDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		000884481491AE4900552AB0 /* iOS Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000884531491AE4900552AB0 /* Build configuration list for PBXNativeTarget "iOS Library" */;
+			buildPhases = (
+				000884451491AE4900552AB0 /* Sources */,
+				000884461491AE4900552AB0 /* Frameworks */,
+				000884471491AE4900552AB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Library";
+			productName = A2DynamicDelegate;
+			productReference = 000884491491AE4900552AB0 /* libA2DynamicDelegate.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0051A03E1481BE160089CC41 /* A2DD Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0051A0571481BE160089CC41 /* Build configuration list for PBXNativeTarget "A2DD Demo" */;
+			buildPhases = (
+				0051A03B1481BE160089CC41 /* Sources */,
+				0051A03C1481BE160089CC41 /* Frameworks */,
+				0051A03D1481BE160089CC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F6D21914995D3C0003DEAE /* PBXTargetDependency */,
+			);
+			name = "A2DD Demo";
+			productName = DynamicDelegate;
+			productReference = 0051A03F1481BE160089CC41 /* A2DD Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0071BC4114A2C74D00D7F4F8 /* OS X Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0071BC4E14A2C74E00D7F4F8 /* Build configuration list for PBXNativeTarget "OS X Framework" */;
+			buildPhases = (
+				0071BC3D14A2C74D00D7F4F8 /* Sources */,
+				0071BC3E14A2C74D00D7F4F8 /* Frameworks */,
+				0071BC3F14A2C74D00D7F4F8 /* Headers */,
+				0071BC4014A2C74D00D7F4F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OS X Framework";
+			productName = A2DynamicDelegate;
+			productReference = 0071BC4214A2C74D00D7F4F8 /* A2DynamicDelegate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0051A0361481BE160089CC41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Pandamonia LLC";
+			};
+			buildConfigurationList = 0051A0391481BE160089CC41 /* Build configuration list for PBXProject "A2DynamicDelegate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0051A0341481BE160089CC41;
+			productRefGroup = 0051A0401481BE160089CC41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0051A03E1481BE160089CC41 /* A2DD Demo */,
+				000884481491AE4900552AB0 /* iOS Library */,
+				0071BC4114A2C74D00D7F4F8 /* OS X Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0051A03D1481BE160089CC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0071BC4014A2C74D00D7F4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000884451491AE4900552AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001ED6551491B143006EE0B2 /* A2BlockDelegate.m in Sources */,
+				001ED6571491B146006EE0B2 /* A2DynamicDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0051A03B1481BE160089CC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0051A0501481BE160089CC41 /* Demo-main.m in Sources */,
+				0051A0541481BE160089CC41 /* DDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0071BC3D14A2C74D00D7F4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0071BC5314A2C87200D7F4F8 /* A2BlockDelegate.m in Sources */,
+				0071BC5414A2C87300D7F4F8 /* A2DynamicDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00F6D21914995D3C0003DEAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000884481491AE4900552AB0 /* iOS Library */;
+			targetProxy = 00F6D21814995D3C0003DEAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000884511491AE4900552AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/iOS Library-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = A2DynamicDelegate;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		000884521491AE4900552AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/iOS Library-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = A2DynamicDelegate;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		0051A0551481BE160089CC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0051A0561481BE160089CC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0051A0581481BE160089CC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0051A0591481BE160089CC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0071BC4F14A2C74E00D7F4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.5;
+				DYLIB_CURRENT_VERSION = 1.0.5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/OS X Framework-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "Demo/OS X Framework-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = A2DynamicDelegate;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0071BC5014A2C74E00D7F4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1.0.5;
+				DYLIB_CURRENT_VERSION = 1.0.5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/OS X Framework-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "Demo/OS X Framework-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = A2DynamicDelegate;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000884531491AE4900552AB0 /* Build configuration list for PBXNativeTarget "iOS Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000884511491AE4900552AB0 /* Debug */,
+				000884521491AE4900552AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0051A0391481BE160089CC41 /* Build configuration list for PBXProject "A2DynamicDelegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0051A0551481BE160089CC41 /* Debug */,
+				0051A0561481BE160089CC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0051A0571481BE160089CC41 /* Build configuration list for PBXNativeTarget "A2DD Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0051A0581481BE160089CC41 /* Debug */,
+				0051A0591481BE160089CC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0071BC4E14A2C74E00D7F4F8 /* Build configuration list for PBXNativeTarget "OS X Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0071BC4F14A2C74E00D7F4F8 /* Debug */,
+				0071BC5014A2C74E00D7F4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0051A0361481BE160089CC41 /* Project object */;
+}
