@@ -10,9 +10,17 @@
 #import "MixerDelegate_Protocol.h"
 #import "PivotalTrackerMixer.h"
 
-@interface AuthViewController  : NSViewController <MixerDelegate>
+@protocol AuthDelegate <NSObject> 
+- (void)authenticated;
+@end
+
+@interface AuthViewController  : NSViewController <MixerAuthDelegate>{
+    Mixer *mixer;
+}
 
 @property (strong) Mixer *mixer;
+@property (unsafe_unretained) id <AuthDelegate>delegate;
+@property (assign) BOOL loading;
 
 @property (unsafe_unretained) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSTextField *usernameTextField;

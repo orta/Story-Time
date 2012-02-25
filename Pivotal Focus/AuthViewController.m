@@ -11,23 +11,31 @@
 @implementation AuthViewController
 
 @synthesize usernameTextField, passwordTextField, window;
-@synthesize mixer = _mixer;
-
+@synthesize loading = _loading, delegate = _delegate;
+@dynamic mixer;
 
 - (IBAction)connectButton:(id)sender {
-    NSLog(@"logging in %@", self.mixer);
     [self.mixer loginWithUsername:[usernameTextField stringValue] andPassword:[passwordTextField stringValue]];
+    self.loading = YES;
 }
 
 - (void)mixer:(Mixer *)mixer DidLoginWithAuthToken:(NSString *)token {
-    NSLog(@"success");
     [[NSUserDefaults standardUserDefaults] setObject:token forKey:ORAuthToken];
     [[NSUserDefaults standardUserDefaults] synchronize];
-
+    [self.delegate authenticated];
 }
 
 - (void)mixer:(Mixer *)mixer failedToLogin:(NSError *)error {
-    NSLog(@"failure");    
+    self.loading = NO;
+}
+
+- (void)setMixer:(Mixer *)aMixer {
+    mixer = aMixer;
+    mixer.authDelegate = self;
+}
+
+- (Mixer *)mixer {
+    return mixer;
 }
 
 @end

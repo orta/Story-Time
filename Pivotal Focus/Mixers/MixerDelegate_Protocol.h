@@ -8,7 +8,7 @@
 
 @class Mixer;
 
-@protocol MixerDelegate <NSObject>
+@protocol MixerAuthDelegate <NSObject>
 - (void)mixer:(Mixer *)mixer DidLoginWithAuthToken:(NSString *)token;
 - (void)mixer:(Mixer *)mixer failedToLogin:(NSError *)error;
 @end

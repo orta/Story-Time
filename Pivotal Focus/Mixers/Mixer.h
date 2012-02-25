@@ -11,6 +11,8 @@
 @interface Mixer : NSObject
 
 + (Mixer*)sharedMixer;
+@property (unsafe_unretained) id<MixerAuthDelegate> authDelegate;
+
 - (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password;
 - (void)getProjects;
 

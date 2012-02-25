@@ -13,7 +13,6 @@
 @implementation PivotalTrackerMixer
 
 @synthesize server = _server;
-@synthesize delegate = _delegate;
 
 - (id)init {
     self = [super init];
@@ -40,13 +39,13 @@
             NSString *token = [[responseDict objectForKey:@"token"] objectForKey:@"guid"];
             [_server.client setValue: token forHTTPHeaderField:@"X-TrackerToken"];
             
-            if ([self.delegate respondsToSelector:@selector(mixer:DidLoginWithAuthToken:)]) {
-                [self.delegate mixer:self DidLoginWithAuthToken:token];
+            if ([self.authDelegate respondsToSelector:@selector(mixer:DidLoginWithAuthToken:)]) {
+                [self.authDelegate mixer:self DidLoginWithAuthToken:token];
             }
         }
     }else{
-        if ([self.delegate respondsToSelector:@selector(mixer:failedToLogin:)]) {
-            [self.delegate mixer:self failedToLogin:nil];
+        if ([self.authDelegate respondsToSelector:@selector(mixer:failedToLogin:)]) {
+            [self.authDelegate mixer:self failedToLogin:nil];
         }
         NSLog(@"failed");
     }

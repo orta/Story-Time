@@ -17,16 +17,21 @@
     mixer = [[PivotalTrackerMixer alloc] init];
     
     
-    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:ORAuthToken];
+//    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:ORAuthToken];
 //    if (token) {
-//        [self.window becomeMainWindow];
 //    }else{
     
     authVC = [[AuthViewController alloc] init];
     authVC.mixer = mixer;
+    authVC.delegate = self;
     [NSBundle loadNibNamed:@"AuthWindow" owner:authVC];
     
 //    }
+}
+
+- (void)authenticated {
+    authVC = nil;
+    [self.window becomeMainWindow];
 }
 
 @end

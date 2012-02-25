@@ -13,7 +13,6 @@
 @interface PivotalTrackerMixer : Mixer  <RKRequestDelegate, RKObjectLoaderDelegate>
 
 @property (strong) PTServer *server;
-@property (weak) id<MixerDelegate> delegate;
 
 - (IBAction)getProjects:(id)sender;
 

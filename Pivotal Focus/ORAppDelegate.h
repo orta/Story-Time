@@ -8,9 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class AuthViewController;
+#import "AuthViewController.h"
 
-@interface ORAppDelegate : NSObject <NSApplicationDelegate> {
+@interface ORAppDelegate : NSObject <NSApplicationDelegate, AuthDelegate> {
     AuthViewController *authVC;
     Mixer *mixer;
 }
