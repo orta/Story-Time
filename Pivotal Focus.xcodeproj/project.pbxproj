@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6032690A14F95035000AA67D /* ProjectCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032690914F95035000AA67D /* ProjectCollection.m */; };
+		6073567314F9598200D7AA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073567214F9598200D7AA74 /* QuartzCore.framework */; };
+		6073567714F95B9100D7AA74 /* AuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6073567514F95B9100D7AA74 /* AuthWindow.xib */; };
+		6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6073567914F95BAC00D7AA74 /* AuthViewController.m */; };
 		60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE792714F90822002A2AA9 /* Cocoa.framework */; };
 		60AE793214F90822002A2AA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793014F90822002A2AA9 /* InfoPlist.strings */; };
 		60AE793414F90822002A2AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE793314F90822002A2AA9 /* main.m */; };
@@ -17,7 +20,7 @@
 		60AE797114F911C0002A2AA9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 60AE797014F911C0002A2AA9 /* Podfile */; };
 		60AE798E14F91307002A2AA9 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE798D14F91307002A2AA9 /* Ticket.m */; };
 		60AE799814F913FE002A2AA9 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE799714F913FE002A2AA9 /* Server.m */; };
-		60AE79B414F9156D002A2AA9 /* PivotalTrackerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B314F9156D002A2AA9 /* PivotalTrackerServer.m */; };
+		60AE79B414F9156D002A2AA9 /* PivotalTrackerMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */; };
 		60AE79B814F91656002A2AA9 /* Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B714F91656002A2AA9 /* Mixer.m */; };
 		60AE7A0914F9203E002A2AA9 /* PTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A0814F9203E002A2AA9 /* PTServer.m */; };
 		60AE7A0A14F920E6002A2AA9 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE7A0114F91FF0002A2AA9 /* RestKit.framework */; };
@@ -69,6 +72,10 @@
 		08B6B8085EF9480F93353D30 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		6032690814F95035000AA67D /* ProjectCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectCollection.h; path = ORM/ProjectCollection.h; sourceTree = "<group>"; };
 		6032690914F95035000AA67D /* ProjectCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectCollection.m; path = ORM/ProjectCollection.m; sourceTree = "<group>"; };
+		6073567214F9598200D7AA74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6073567614F95B9100D7AA74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AuthWindow.xib; sourceTree = "<group>"; };
+		6073567814F95BAB00D7AA74 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		6073567914F95BAC00D7AA74 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		60AE792314F90822002A2AA9 /* Pivotal Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pivotal Focus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE792714F90822002A2AA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		60AE792A14F90822002A2AA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -88,8 +95,8 @@
 		60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerDelegate_Protocol.h; sourceTree = "<group>"; };
 		60AE799614F913FE002A2AA9 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		60AE799714F913FE002A2AA9 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
-		60AE79B214F9156D002A2AA9 /* PivotalTrackerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PivotalTrackerServer.h; path = "Pivotal Focus/Servers/PivotalTrackerServer.h"; sourceTree = SOURCE_ROOT; };
-		60AE79B314F9156D002A2AA9 /* PivotalTrackerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PivotalTrackerServer.m; path = "Pivotal Focus/Servers/PivotalTrackerServer.m"; sourceTree = SOURCE_ROOT; };
+		60AE79B214F9156D002A2AA9 /* PivotalTrackerMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PivotalTrackerMixer.h; path = "Pivotal Focus/Servers/PivotalTrackerMixer.h"; sourceTree = SOURCE_ROOT; };
+		60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PivotalTrackerMixer.m; path = "Pivotal Focus/Servers/PivotalTrackerMixer.m"; sourceTree = SOURCE_ROOT; };
 		60AE79B614F91656002A2AA9 /* Mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer.h; sourceTree = "<group>"; };
 		60AE79B714F91656002A2AA9 /* Mixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixer.m; sourceTree = "<group>"; };
 		60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
@@ -109,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6073567314F9598200D7AA74 /* QuartzCore.framework in Frameworks */,
 				60AE7A0A14F920E6002A2AA9 /* RestKit.framework in Frameworks */,
 				60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */,
 				83AC9DB4054647E99E4504EE /* libPods.a in Frameworks */,
@@ -118,6 +126,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6073567414F95B1D00D7AA74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6073567514F95B9100D7AA74 /* AuthWindow.xib */,
+				6073567814F95BAB00D7AA74 /* AuthViewController.h */,
+				6073567914F95BAC00D7AA74 /* AuthViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		60AE791814F90822002A2AA9 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				60AE79F214F91FF0002A2AA9 /* RestKit.xcodeproj */,
+				6073567214F9598200D7AA74 /* QuartzCore.framework */,
 				60AE792714F90822002A2AA9 /* Cocoa.framework */,
 				60AE792914F90822002A2AA9 /* Other Frameworks */,
 				EE26ACD07FBD4E4793CA1CB0 /* libPods.a */,
@@ -161,6 +180,7 @@
 		60AE792D14F90822002A2AA9 /* Pivotal Focus */ = {
 			isa = PBXGroup;
 			children = (
+				6073567414F95B1D00D7AA74 /* Controllers */,
 				60AE7A3314F92B89002A2AA9 /* Constants */,
 				60AE795A14F9090D002A2AA9 /* Models */,
 				60AE795C14F9091D002A2AA9 /* Mixers */,
@@ -202,8 +222,8 @@
 				60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocol.h */,
 				60AE79B614F91656002A2AA9 /* Mixer.h */,
 				60AE79B714F91656002A2AA9 /* Mixer.m */,
-				60AE79B214F9156D002A2AA9 /* PivotalTrackerServer.h */,
-				60AE79B314F9156D002A2AA9 /* PivotalTrackerServer.m */,
+				60AE79B214F9156D002A2AA9 /* PivotalTrackerMixer.h */,
+				60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */,
 			);
 			path = Mixers;
 			sourceTree = "<group>";
@@ -279,7 +299,7 @@
 		60AE791A14F90822002A2AA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = ortatherox.com;
 			};
 			buildConfigurationList = 60AE791D14F90822002A2AA9 /* Build configuration list for PBXProject "Pivotal Focus" */;
@@ -345,6 +365,7 @@
 				60AE793814F90822002A2AA9 /* Credits.rtf in Resources */,
 				60AE793E14F90822002A2AA9 /* MainMenu.xib in Resources */,
 				60AE797114F911C0002A2AA9 /* Podfile in Resources */,
+				6073567714F95B9100D7AA74 /* AuthWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,13 +397,14 @@
 				60AE793B14F90822002A2AA9 /* ORAppDelegate.m in Sources */,
 				60AE798E14F91307002A2AA9 /* Ticket.m in Sources */,
 				60AE799814F913FE002A2AA9 /* Server.m in Sources */,
-				60AE79B414F9156D002A2AA9 /* PivotalTrackerServer.m in Sources */,
+				60AE79B414F9156D002A2AA9 /* PivotalTrackerMixer.m in Sources */,
 				60AE79B814F91656002A2AA9 /* Mixer.m in Sources */,
 				60AE7A0914F9203E002A2AA9 /* PTServer.m in Sources */,
 				60AE7A3614F92BA1002A2AA9 /* Defaults.m in Sources */,
 				60AE7A4E14F92DD8002A2AA9 /* Project.m in Sources */,
 				60CD6E3B14F931D3004CC17D /* ORMObject.m in Sources */,
 				6032690A14F95035000AA67D /* ProjectCollection.m in Sources */,
+				6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +419,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6073567514F95B9100D7AA74 /* AuthWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6073567614F95B9100D7AA74 /* en */,
+			);
+			name = AuthWindow.xib;
+			sourceTree = "<group>";
+		};
 		60AE793014F90822002A2AA9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -477,6 +507,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -493,6 +527,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

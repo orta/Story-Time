@@ -8,8 +8,6 @@
 #import <Cocoa/Cocoa.h>
 
 // libs
-#import "BlocksKit.h"
-#import "ConciseKit.h"
 #import <RestKit/RestKit.h>
 
 // models

@@ -1,6 +1,3 @@
 #ifdef __OBJC__
 #import <Cocoa/Cocoa.h>
 #endif
-#ifdef __OBJC__
-#import "BlocksKit.h"
-#endif

@@ -8,6 +8,20 @@
 
 #import "Mixer.h"
 
+static Mixer *sharedMixer;
+
+
 @implementation Mixer
 
+- (void)initialize {
+    static dispatch_once_t pred;
+    dispatch_once(&pred, ^{ sharedMixer = [[Mixer alloc] init]; } );
+}
+
++ (Mixer*) sharedMixer {
+    return sharedMixer;
+}
+
+- (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password{};
+- (void)getProjects{};
 @end

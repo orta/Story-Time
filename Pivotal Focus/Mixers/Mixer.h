@@ -10,4 +10,8 @@
 
 @interface Mixer : NSObject
 
++ (Mixer*)sharedMixer;
+- (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password;
+- (void)getProjects;
+
 @end

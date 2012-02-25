@@ -8,7 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ORAppDelegate : NSObject <NSApplicationDelegate>
+@class AuthViewController;
+
+@interface ORAppDelegate : NSObject <NSApplicationDelegate> {
+    AuthViewController *authVC;
+    Mixer *mixer;
+}
 
 @property (unsafe_unretained) IBOutlet NSWindow *window;
 
