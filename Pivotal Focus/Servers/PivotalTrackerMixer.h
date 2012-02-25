@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import "MixerDelegate_Protocol.h"
-
 @class PTServer;
 
 @interface PivotalTrackerMixer : Mixer  <RKRequestDelegate, RKObjectLoaderDelegate>

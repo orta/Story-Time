@@ -22,6 +22,8 @@
 - (void)mixer:(Mixer *)mixer DidLoginWithAuthToken:(NSString *)token {
     [[NSUserDefaults standardUserDefaults] setObject:token forKey:ORAuthToken];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [self.window close];
     [self.delegate authenticated];
 }
 

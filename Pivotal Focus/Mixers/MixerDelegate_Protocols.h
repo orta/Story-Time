@@ -7,8 +7,13 @@
 //
 
 @class Mixer;
+@class ProjectCollection;
 
 @protocol MixerAuthDelegate <NSObject>
 - (void)mixer:(Mixer *)mixer DidLoginWithAuthToken:(NSString *)token;
 - (void)mixer:(Mixer *)mixer failedToLogin:(NSError *)error;
+@end
+
+@protocol MixerDelegate <NSObject>
+- (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection;
 @end

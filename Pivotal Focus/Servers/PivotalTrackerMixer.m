@@ -66,7 +66,9 @@
 
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects{    
     ProjectCollection *collection = [objects objectAtIndex:0];
-    NSLog(@"objects %@", collection.projects);
+    if ([self.delegate respondsToSelector:@selector(mixer:returnedProjectsCollection:)]) {
+        [self.delegate mixer:self returnedProjectsCollection:collection];
+    }
 }
 
 @end

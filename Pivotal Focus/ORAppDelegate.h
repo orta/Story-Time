@@ -9,12 +9,14 @@
 #import <Cocoa/Cocoa.h>
 
 #import "AuthViewController.h"
+#import "TicketViewController.h"
 
 @interface ORAppDelegate : NSObject <NSApplicationDelegate, AuthDelegate> {
     AuthViewController *authVC;
     Mixer *mixer;
 }
 
+@property (weak) IBOutlet TicketViewController *ticketVC;
 @property (unsafe_unretained) IBOutlet NSWindow *window;
 
 @end

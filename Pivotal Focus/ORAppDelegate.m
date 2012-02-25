@@ -12,26 +12,30 @@
 @implementation ORAppDelegate
 
 @synthesize window = _window;
+@synthesize ticketVC;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     mixer = [[PivotalTrackerMixer alloc] init];
     
     
-//    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:ORAuthToken];
-//    if (token) {
-//    }else{
-    
-    authVC = [[AuthViewController alloc] init];
-    authVC.mixer = mixer;
-    authVC.delegate = self;
-    [NSBundle loadNibNamed:@"AuthWindow" owner:authVC];
-    
-//    }
+    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:ORAuthToken];
+    if (token) {
+        [self authenticated];
+        
+    }else{
+        authVC = [[AuthViewController alloc] init];
+        authVC.mixer = mixer;
+        authVC.delegate = self;
+        [NSBundle loadNibNamed:@"AuthWindow" owner:authVC];    
+    }
 }
 
 - (void)authenticated {
     authVC = nil;
-    [self.window becomeMainWindow];
+    
+    ticketVC.mixer = mixer;
+    [ticketVC authenticated];
+    [self.window makeKeyAndOrderFront:self];
 }
 
 @end

@@ -11,6 +11,7 @@
 		6073567314F9598200D7AA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073567214F9598200D7AA74 /* QuartzCore.framework */; };
 		6073567714F95B9100D7AA74 /* AuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6073567514F95B9100D7AA74 /* AuthWindow.xib */; };
 		6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6073567914F95BAC00D7AA74 /* AuthViewController.m */; };
+		607356B614F9709A00D7AA74 /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607356B514F9709A00D7AA74 /* TicketViewController.m */; };
 		60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE792714F90822002A2AA9 /* Cocoa.framework */; };
 		60AE793214F90822002A2AA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793014F90822002A2AA9 /* InfoPlist.strings */; };
 		60AE793414F90822002A2AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE793314F90822002A2AA9 /* main.m */; };
@@ -76,6 +77,8 @@
 		6073567614F95B9100D7AA74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AuthWindow.xib; sourceTree = "<group>"; };
 		6073567814F95BAB00D7AA74 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
 		6073567914F95BAC00D7AA74 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		607356B414F9709A00D7AA74 /* TicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketViewController.h; path = ViewController/TicketViewController.h; sourceTree = "<group>"; };
+		607356B514F9709A00D7AA74 /* TicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketViewController.m; path = ViewController/TicketViewController.m; sourceTree = "<group>"; };
 		60AE792314F90822002A2AA9 /* Pivotal Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pivotal Focus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE792714F90822002A2AA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		60AE792A14F90822002A2AA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -92,7 +95,7 @@
 		60AE797014F911C0002A2AA9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		60AE798C14F91307002A2AA9 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		60AE798D14F91307002A2AA9 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
-		60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerDelegate_Protocol.h; sourceTree = "<group>"; };
+		60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerDelegate_Protocols.h; sourceTree = "<group>"; };
 		60AE799614F913FE002A2AA9 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		60AE799714F913FE002A2AA9 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		60AE79B214F9156D002A2AA9 /* PivotalTrackerMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PivotalTrackerMixer.h; path = "Pivotal Focus/Servers/PivotalTrackerMixer.h"; sourceTree = SOURCE_ROOT; };
@@ -132,6 +135,9 @@
 				6073567514F95B9100D7AA74 /* AuthWindow.xib */,
 				6073567814F95BAB00D7AA74 /* AuthViewController.h */,
 				6073567914F95BAC00D7AA74 /* AuthViewController.m */,
+				60AE793C14F90822002A2AA9 /* MainMenu.xib */,
+				607356B414F9709A00D7AA74 /* TicketViewController.h */,
+				607356B514F9709A00D7AA74 /* TicketViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,7 +192,6 @@
 				60AE795C14F9091D002A2AA9 /* Mixers */,
 				60AE793914F90822002A2AA9 /* ORAppDelegate.h */,
 				60AE793A14F90822002A2AA9 /* ORAppDelegate.m */,
-				60AE793C14F90822002A2AA9 /* MainMenu.xib */,
 				60AE792E14F90822002A2AA9 /* Supporting Files */,
 			);
 			path = "Pivotal Focus";
@@ -218,12 +223,11 @@
 		60AE795C14F9091D002A2AA9 /* Mixers */ = {
 			isa = PBXGroup;
 			children = (
-				60AE7A1A14F924C7002A2AA9 /* PivotalTracker ORM */,
-				60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocol.h */,
+				60AE7A1B14F924E9002A2AA9 /* Models */,
+				60AE7A1A14F924C7002A2AA9 /* PivotalTracker */,
+				60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocols.h */,
 				60AE79B614F91656002A2AA9 /* Mixer.h */,
 				60AE79B714F91656002A2AA9 /* Mixer.m */,
-				60AE79B214F9156D002A2AA9 /* PivotalTrackerMixer.h */,
-				60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */,
 			);
 			path = Mixers;
 			sourceTree = "<group>";
@@ -239,14 +243,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60AE7A1A14F924C7002A2AA9 /* PivotalTracker ORM */ = {
+		60AE7A1A14F924C7002A2AA9 /* PivotalTracker */ = {
 			isa = PBXGroup;
 			children = (
-				60AE7A1B14F924E9002A2AA9 /* Models */,
+				60AE79B214F9156D002A2AA9 /* PivotalTrackerMixer.h */,
+				60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */,
 				60AE7A0714F9203E002A2AA9 /* PTServer.h */,
 				60AE7A0814F9203E002A2AA9 /* PTServer.m */,
 			);
-			name = "PivotalTracker ORM";
+			name = PivotalTracker;
 			sourceTree = "<group>";
 		};
 		60AE7A1B14F924E9002A2AA9 /* Models */ = {
@@ -405,6 +410,7 @@
 				60CD6E3B14F931D3004CC17D /* ORMObject.m in Sources */,
 				6032690A14F95035000AA67D /* ProjectCollection.m in Sources */,
 				6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */,
+				607356B614F9709A00D7AA74 /* TicketViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

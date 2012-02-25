@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MixerDelegate_Protocol.h"
+#import "MixerDelegate_Protocols.h"
 #import "PivotalTrackerMixer.h"
 
 @protocol AuthDelegate <NSObject> 

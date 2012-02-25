@@ -14,6 +14,7 @@ static Mixer *sharedMixer;
 @implementation Mixer
 
 @synthesize authDelegate = _authDelegate;
+@synthesize delegate = _delegate;
 
 - (void)initialize {
     static dispatch_once_t pred;

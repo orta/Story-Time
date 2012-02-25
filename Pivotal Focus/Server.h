@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MixerDelegate_Protocol.h"
+#import "MixerDelegate_Protocols.h"
 
 @interface Server : NSObject <NSCoding>{
     
