@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE792714F90822002A2AA9 /* Cocoa.framework */; };
+		60AE793214F90822002A2AA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793014F90822002A2AA9 /* InfoPlist.strings */; };
+		60AE793414F90822002A2AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE793314F90822002A2AA9 /* main.m */; };
+		60AE793814F90822002A2AA9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793614F90822002A2AA9 /* Credits.rtf */; };
+		60AE793B14F90822002A2AA9 /* ORAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE793A14F90822002A2AA9 /* ORAppDelegate.m */; };
+		60AE793E14F90822002A2AA9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793C14F90822002A2AA9 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60AE792314F90822002A2AA9 /* Pivotal Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pivotal Focus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AE792714F90822002A2AA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		60AE792A14F90822002A2AA9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		60AE792B14F90822002A2AA9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		60AE792C14F90822002A2AA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60AE792F14F90822002A2AA9 /* Pivotal Focus-Info.plist */ = {isa = PBXFileReference; path = "Pivotal Focus-Info.plist"; sourceTree = "<group>"; };
+		60AE793114F90822002A2AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60AE793314F90822002A2AA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60AE793514F90822002A2AA9 /* Pivotal Focus-Prefix.pch */ = {isa = PBXFileReference; path = "Pivotal Focus-Prefix.pch"; sourceTree = "<group>"; };
+		60AE793714F90822002A2AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		60AE793914F90822002A2AA9 /* ORAppDelegate.h */ = {isa = PBXFileReference; path = ORAppDelegate.h; sourceTree = "<group>"; };
+		60AE793A14F90822002A2AA9 /* ORAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORAppDelegate.m; sourceTree = "<group>"; };
+		60AE793D14F90822002A2AA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60AE792014F90822002A2AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60AE791814F90822002A2AA9 = {
+			isa = PBXGroup;
+			children = (
+				60AE792D14F90822002A2AA9 /* Pivotal Focus */,
+				60AE792614F90822002A2AA9 /* Frameworks */,
+				60AE792414F90822002A2AA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60AE792414F90822002A2AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60AE792314F90822002A2AA9 /* Pivotal Focus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60AE792614F90822002A2AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60AE792714F90822002A2AA9 /* Cocoa.framework */,
+				60AE792914F90822002A2AA9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60AE792914F90822002A2AA9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60AE792A14F90822002A2AA9 /* AppKit.framework */,
+				60AE792B14F90822002A2AA9 /* CoreData.framework */,
+				60AE792C14F90822002A2AA9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		60AE792D14F90822002A2AA9 /* Pivotal Focus */ = {
+			isa = PBXGroup;
+			children = (
+				60AE793914F90822002A2AA9 /* ORAppDelegate.h */,
+				60AE793A14F90822002A2AA9 /* ORAppDelegate.m */,
+				60AE793C14F90822002A2AA9 /* MainMenu.xib */,
+				60AE792E14F90822002A2AA9 /* Supporting Files */,
+			);
+			path = "Pivotal Focus";
+			sourceTree = "<group>";
+		};
+		60AE792E14F90822002A2AA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60AE792F14F90822002A2AA9 /* Pivotal Focus-Info.plist */,
+				60AE793014F90822002A2AA9 /* InfoPlist.strings */,
+				60AE793314F90822002A2AA9 /* main.m */,
+				60AE793514F90822002A2AA9 /* Pivotal Focus-Prefix.pch */,
+				60AE793614F90822002A2AA9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60AE792214F90822002A2AA9 /* Pivotal Focus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60AE794114F90822002A2AA9 /* Build configuration list for PBXNativeTarget "Pivotal Focus" */;
+			buildPhases = (
+				60AE791F14F90822002A2AA9 /* Sources */,
+				60AE792014F90822002A2AA9 /* Frameworks */,
+				60AE792114F90822002A2AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pivotal Focus";
+			productName = "Pivotal Focus";
+			productReference = 60AE792314F90822002A2AA9 /* Pivotal Focus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60AE791A14F90822002A2AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = ortatherox.com;
+			};
+			buildConfigurationList = 60AE791D14F90822002A2AA9 /* Build configuration list for PBXProject "Pivotal Focus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60AE791814F90822002A2AA9;
+			productRefGroup = 60AE792414F90822002A2AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60AE792214F90822002A2AA9 /* Pivotal Focus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60AE792114F90822002A2AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE793214F90822002A2AA9 /* InfoPlist.strings in Resources */,
+				60AE793814F90822002A2AA9 /* Credits.rtf in Resources */,
+				60AE793E14F90822002A2AA9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60AE791F14F90822002A2AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AE793414F90822002A2AA9 /* main.m in Sources */,
+				60AE793B14F90822002A2AA9 /* ORAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60AE793014F90822002A2AA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AE793114F90822002A2AA9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		60AE793614F90822002A2AA9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AE793714F90822002A2AA9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		60AE793C14F90822002A2AA9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60AE793D14F90822002A2AA9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60AE793F14F90822002A2AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60AE794014F90822002A2AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		60AE794214F90822002A2AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
+				INFOPLIST_FILE = "Pivotal Focus/Pivotal Focus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		60AE794314F90822002A2AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
+				INFOPLIST_FILE = "Pivotal Focus/Pivotal Focus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60AE791D14F90822002A2AA9 /* Build configuration list for PBXProject "Pivotal Focus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AE793F14F90822002A2AA9 /* Debug */,
+				60AE794014F90822002A2AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60AE794114F90822002A2AA9 /* Build configuration list for PBXNativeTarget "Pivotal Focus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AE794214F90822002A2AA9 /* Debug */,
+				60AE794314F90822002A2AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60AE791A14F90822002A2AA9 /* Project object */;
+}
