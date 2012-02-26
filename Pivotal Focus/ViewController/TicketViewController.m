@@ -22,6 +22,11 @@
    return [[_projectArrayController selectedObjects] objectAtIndex:0];
 }
 
+- (Ticket *)currentTicket {
+    return [[_ticketArrayController selectedObjects] objectAtIndex:0];
+}
+
+
 #pragma mark Mixer Delegate Methods
 
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection {
@@ -34,7 +39,8 @@
 }
 
 - (IBAction)info:(id)sender {
-    NSLog(@" array %@", self.projects);
+    NSLog(@" project %@", [self currentProject].name );
+    NSLog(@" ticket %@", [self currentTicket].name );
 }
 
 #pragma mark Mixer management

@@ -13,7 +13,7 @@
 @class Project, NoteCollection;
 @interface Ticket : ORMObject
 
-@property (strong) NSString *title;
+@property (strong) NSString *name;
 @property (strong) NSString *body;
 @property (strong) NSString *tags;
 @property (strong) NSString *uid;

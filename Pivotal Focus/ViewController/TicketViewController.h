@@ -21,6 +21,8 @@
 @property (strong) Mixer *mixer;
 
 - (Project *)currentProject;
+- (Ticket *)currentTicket;
+
 - (void)authenticated;
 - (IBAction)info:(id)sender;
 @end

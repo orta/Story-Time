@@ -1626,7 +1626,7 @@
 				<bool key="NSFilterRestrictsInsertion">YES</bool>
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
-			<object class="NSArrayController" id="783214621">
+			<object class="NSArrayController" id="315491384">
 				<array class="NSMutableArray" key="NSDeclaredKeys">
 					<string>title</string>
 				</array>
@@ -2350,7 +2350,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">_ticketArrayController</string>
 						<reference key="source" ref="646844465"/>
-						<reference key="destination" ref="783214621"/>
+						<reference key="destination" ref="315491384"/>
 					</object>
 					<int key="connectionID">629</int>
 				</object>
@@ -2391,7 +2391,7 @@
 						<string key="label">contentValues: arrangedObjects.name</string>
 						<reference key="source" ref="609503877"/>
 						<reference key="destination" ref="905215920"/>
-						<object class="NSNibBindingConnector" key="connector" id="896494741">
+						<object class="NSNibBindingConnector" key="connector" id="115572654">
 							<reference key="NSSource" ref="609503877"/>
 							<reference key="NSDestination" ref="905215920"/>
 							<string key="NSLabel">contentValues: arrangedObjects.name</string>
@@ -2414,7 +2414,7 @@
 							<string key="NSLabel">selectedIndex: selectionIndex</string>
 							<string key="NSBinding">selectedIndex</string>
 							<string key="NSKeyPath">selectionIndex</string>
-							<reference key="NSPreviousConnector" ref="896494741"/>
+							<reference key="NSPreviousConnector" ref="115572654"/>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
@@ -2422,27 +2422,27 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.title</string>
+						<string key="label">value: arrangedObjects.name</string>
 						<reference key="source" ref="563412213"/>
-						<reference key="destination" ref="783214621"/>
+						<reference key="destination" ref="315491384"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="563412213"/>
-							<reference key="NSDestination" ref="783214621"/>
-							<string key="NSLabel">value: arrangedObjects.title</string>
+							<reference key="NSDestination" ref="315491384"/>
+							<string key="NSLabel">value: arrangedObjects.name</string>
 							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.title</string>
+							<string key="NSKeyPath">arrangedObjects.name</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">631</int>
+					<int key="connectionID">634</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">contentArray: self.tickets</string>
-						<reference key="source" ref="783214621"/>
+						<reference key="source" ref="315491384"/>
 						<reference key="destination" ref="646844465"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="783214621"/>
+							<reference key="NSSource" ref="315491384"/>
 							<reference key="NSDestination" ref="646844465"/>
 							<string key="NSLabel">contentArray: self.tickets</string>
 							<string key="NSBinding">contentArray</string>
@@ -3570,7 +3570,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">620</int>
-						<reference key="object" ref="783214621"/>
+						<reference key="object" ref="315491384"/>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Tickets</string>
 					</object>
@@ -3754,7 +3754,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">633</int>
+			<int key="maxID">643</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

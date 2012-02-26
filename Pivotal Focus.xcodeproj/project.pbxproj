@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6032690A14F95035000AA67D /* ProjectCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032690914F95035000AA67D /* ProjectCollection.m */; };
+		604228ED14FAB3F5002986D8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE792B14F90822002A2AA9 /* CoreData.framework */; };
 		6073567314F9598200D7AA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073567214F9598200D7AA74 /* QuartzCore.framework */; };
 		6073567714F95B9100D7AA74 /* AuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6073567514F95B9100D7AA74 /* AuthWindow.xib */; };
 		6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6073567914F95BAC00D7AA74 /* AuthViewController.m */; };
@@ -20,7 +21,6 @@
 		60AE793E14F90822002A2AA9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AE793C14F90822002A2AA9 /* MainMenu.xib */; };
 		60AE797114F911C0002A2AA9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 60AE797014F911C0002A2AA9 /* Podfile */; };
 		60AE798E14F91307002A2AA9 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE798D14F91307002A2AA9 /* Ticket.m */; };
-		60AE799814F913FE002A2AA9 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE799714F913FE002A2AA9 /* Server.m */; };
 		60AE79B414F9156D002A2AA9 /* PivotalTrackerMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */; };
 		60AE79B814F91656002A2AA9 /* Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE79B714F91656002A2AA9 /* Mixer.m */; };
 		60AE7A0914F9203E002A2AA9 /* PTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A0814F9203E002A2AA9 /* PTServer.m */; };
@@ -99,8 +99,6 @@
 		60AE798C14F91307002A2AA9 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		60AE798D14F91307002A2AA9 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 		60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixerDelegate_Protocols.h; sourceTree = "<group>"; };
-		60AE799614F913FE002A2AA9 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
-		60AE799714F913FE002A2AA9 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		60AE79B214F9156D002A2AA9 /* PivotalTrackerMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PivotalTrackerMixer.h; path = "Pivotal Focus/Servers/PivotalTrackerMixer.h"; sourceTree = SOURCE_ROOT; };
 		60AE79B314F9156D002A2AA9 /* PivotalTrackerMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PivotalTrackerMixer.m; path = "Pivotal Focus/Servers/PivotalTrackerMixer.m"; sourceTree = SOURCE_ROOT; };
 		60AE79B614F91656002A2AA9 /* Mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer.h; sourceTree = "<group>"; };
@@ -110,8 +108,8 @@
 		60AE7A0814F9203E002A2AA9 /* PTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTServer.m; path = "Pivotal Focus/Servers/PTServer.m"; sourceTree = SOURCE_ROOT; };
 		60AE7A3414F92BA1002A2AA9 /* Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defaults.h; path = Constants/Defaults.h; sourceTree = "<group>"; };
 		60AE7A3514F92BA1002A2AA9 /* Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Defaults.m; path = Constants/Defaults.m; sourceTree = "<group>"; };
-		60AE7A4C14F92DD8002A2AA9 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = ORM/Project.h; sourceTree = "<group>"; };
-		60AE7A4D14F92DD8002A2AA9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = ORM/Project.m; sourceTree = "<group>"; };
+		60AE7A4C14F92DD8002A2AA9 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = Mixers/ORM/Project.h; sourceTree = "<group>"; };
+		60AE7A4D14F92DD8002A2AA9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Mixers/ORM/Project.m; sourceTree = "<group>"; };
 		60CD6E3914F931D3004CC17D /* ORMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORMObject.h; path = ORM/ORMObject.h; sourceTree = "<group>"; };
 		60CD6E3A14F931D3004CC17D /* ORMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORMObject.m; path = ORM/ORMObject.m; sourceTree = "<group>"; };
 		60DE9ADF14FA7C800063136C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Mixers/ORM/Note.h; sourceTree = "<group>"; };
@@ -128,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604228ED14FAB3F5002986D8 /* CoreData.framework in Frameworks */,
 				6073567314F9598200D7AA74 /* QuartzCore.framework in Frameworks */,
 				60AE7A0A14F920E6002A2AA9 /* RestKit.framework in Frameworks */,
 				60AE792814F90822002A2AA9 /* Cocoa.framework in Frameworks */,
@@ -221,8 +220,8 @@
 		60AE795A14F9090D002A2AA9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				60AE799614F913FE002A2AA9 /* Server.h */,
-				60AE799714F913FE002A2AA9 /* Server.m */,
+				60AE7A4C14F92DD8002A2AA9 /* Project.h */,
+				60AE7A4D14F92DD8002A2AA9 /* Project.m */,
 				60AE798C14F91307002A2AA9 /* Ticket.h */,
 				60AE798D14F91307002A2AA9 /* Ticket.m */,
 				60DE9ADF14FA7C800063136C /* Note.h */,
@@ -270,8 +269,6 @@
 			children = (
 				60CD6E3914F931D3004CC17D /* ORMObject.h */,
 				60CD6E3A14F931D3004CC17D /* ORMObject.m */,
-				60AE7A4C14F92DD8002A2AA9 /* Project.h */,
-				60AE7A4D14F92DD8002A2AA9 /* Project.m */,
 				6032690814F95035000AA67D /* ProjectCollection.h */,
 				6032690914F95035000AA67D /* ProjectCollection.m */,
 				60F676D414F9A594001DA705 /* TicketCollection.h */,
@@ -416,7 +413,6 @@
 				60AE793414F90822002A2AA9 /* main.m in Sources */,
 				60AE793B14F90822002A2AA9 /* ORAppDelegate.m in Sources */,
 				60AE798E14F91307002A2AA9 /* Ticket.m in Sources */,
-				60AE799814F913FE002A2AA9 /* Server.m in Sources */,
 				60AE79B414F9156D002A2AA9 /* PivotalTrackerMixer.m in Sources */,
 				60AE79B814F91656002A2AA9 /* Mixer.m in Sources */,
 				60AE7A0914F9203E002A2AA9 /* PTServer.m in Sources */,

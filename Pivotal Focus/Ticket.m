@@ -28,12 +28,12 @@
 #import "NoteCollection.h"
 
 @implementation Ticket
-@synthesize title, body, tags, uid, url, state, type, createdAt, project, owner, requester, noteCollection, attachments;
+@synthesize name, body, tags, uid, url, state, type, createdAt, project, owner, requester, noteCollection, attachments;
 
 + (RKObjectMapping *)objectMapping {
     RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
     [objectMapping mapAttributes: @"url", nil];
-    [objectMapping mapKeyPath:@"name" toAttribute:@"title"];
+    [objectMapping mapKeyPath:@"name" toAttribute:@"name"];
     [objectMapping mapKeyPath:@"description" toAttribute:@"body"];
     [objectMapping mapKeyPath:@"created_at" toAttribute:@"createdAt"];
     [objectMapping mapKeyPath:@"current_state" toAttribute:@"state"];

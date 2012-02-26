@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
+#import "MixerDelegate_Protocols.h"
+
 @class Project;
 
 @interface Mixer : NSObject

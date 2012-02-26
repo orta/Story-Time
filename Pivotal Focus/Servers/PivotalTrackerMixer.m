@@ -29,12 +29,12 @@
     [_server.client post:address params:params delegate:self];
 }
 
-- (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {
+- (void)request:(RKRequest *)request didLoadResponse:(RKResponse *)response {
     if ([response isOK]) {
         NSDictionary *responseDict = [[[RKXMLParserLibXML alloc] init] parseXML:[response bodyAsString]];
         if ([responseDict objectForKey:@"token"]) {
             NSString *token = [[responseDict objectForKey:@"token"] objectForKey:@"guid"];
-            [_server.client setValue: token forHTTPHeaderField:@"X-TrackerToken"];
+            [_server.client setValue:token forHTTPHeaderField:@"X-TrackerToken"];
             
             if ([self.authDelegate respondsToSelector:@selector(mixer:DidLoginWithAuthToken:)]) {
                 [self.authDelegate mixer:self DidLoginWithAuthToken:token];

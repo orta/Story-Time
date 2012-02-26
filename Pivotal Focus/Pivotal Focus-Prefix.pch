@@ -9,9 +9,9 @@
 
 // libs
 #import <RestKit/RestKit.h>
+#import <RestKit/CoreData.h>
 
 // models
-#import "Server.h"
 #import "Ticket.h"
 #import "Project.h"
 #import "Mixer.h"
