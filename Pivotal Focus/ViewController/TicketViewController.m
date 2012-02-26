@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
+#import "ObserverBlockConstants.h"
 #import "TicketViewController.h"
 
 @implementation TicketViewController
@@ -13,7 +14,9 @@
 @dynamic mixer;
 
 - (void)awakeFromNib {
-
+    [self addObserverForKeyPath:@"_projectArrayController.selectedIndex" identifier:ORProjectChangedBlock task:^(id obj, NSDictionary *change) {
+        NSLog(@"change");
+    }];
 }
 
 - (void)authenticated {
