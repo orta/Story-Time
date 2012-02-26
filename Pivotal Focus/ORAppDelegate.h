@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 #import "AuthViewController.h"
 #import "TicketViewController.h"
 

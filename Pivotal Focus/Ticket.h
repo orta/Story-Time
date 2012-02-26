@@ -6,8 +6,6 @@
 //  Copyright 2010 http://www.ortatherox.com. All rights reserved.
 //
 
-
-
 #import "ORMObject.h"
 
 @class Project, NoteCollection;

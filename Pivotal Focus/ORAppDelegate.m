@@ -8,7 +8,6 @@
 
 #import "ORAppDelegate.h"
 #import "AuthViewController.h"
-#import "CoreDataManager.h"
 
 @implementation ORAppDelegate
 

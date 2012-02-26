@@ -27,8 +27,6 @@
 //    <bugs_and_chores_are_estimatable>false</bugs_and_chores_are_estimatable>
 //    <commit_mode>false</commit_mode>
 
-#import "Project.h"
-
 @implementation Project
 @dynamic name, uid, labels, velocity, lastActivity;
 

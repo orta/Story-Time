@@ -1,5 +1,7 @@
 PODS:
-  - INAppStoreWindow (1.0)
+  - A2DynamicDelegate (1.0.7)
+  - BlocksKit (1.0.5):
+    - A2DynamicDelegate
 
 DEPENDENCIES:
-  - INAppStoreWindow
+  - BlocksKit

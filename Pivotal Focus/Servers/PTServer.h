@@ -6,7 +6,5 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface PTServer : RKObjectManager
 @end

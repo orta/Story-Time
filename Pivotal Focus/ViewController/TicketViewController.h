@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "MixerDelegate_Protocols.h"
 
 @interface TicketViewController : NSObject <MixerDelegate> {

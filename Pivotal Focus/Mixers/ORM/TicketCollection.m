@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import "TicketCollection.h"
-
 @implementation TicketCollection
 
 @synthesize tickets;

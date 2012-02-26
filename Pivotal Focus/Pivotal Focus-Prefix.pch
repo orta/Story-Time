@@ -2,25 +2,25 @@
 // Prefix header for all source files of the 'Pivotal Focus' target in the 'Pivotal Focus' project
 //
 
-#ifdef __OBJC__
-
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 
 // libs
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
+#import "BlocksKit.h"
 
 // models
 #import "Ticket.h"
 #import "Project.h"
 #import "Mixer.h"
+#import "Note.h"
 
 // Things that should eventually be hidden
 #import "ORMObject.h"
 #import "ProjectCollection.h"
 #import "TicketCollection.h"
+#import "NoteCollection.h"
 
 // constants
 #import "Defaults.h"
-#endif

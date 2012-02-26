@@ -1,5 +1,5 @@
 //
-//  CoreDataManager.h
+//  ObserverBlockConstants.h
 //  Pivotal Focus
 //
 //  Created by orta therox on 26/02/2012.
@@ -7,8 +7,5 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 
-@interface CoreDataManager : NSObject 
-+ (void)setup;
-@end
+extern NSString * const ORProjectChangedBlock;

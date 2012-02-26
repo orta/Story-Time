@@ -6,19 +6,17 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import "ORMObject.h"
-
-
 // Should be called Comment
 // but Carbon has a frakin class called Comment.
 // Lame.
+
+#import "ORMObject.h"
 
 @class Ticket;
 
 @interface Note : ORMObject
 
 @property (strong) NSString *authorString;
-@property (strong) NSString *createdAt;
 @property (strong) NSString *uid;
 @property (strong) NSString *text;
 @property (strong) Ticket *ticket;

@@ -1,3 +1,3 @@
 platform :osx
 
-dependency 'INAppStoreWindow'
+dependency 'BlocksKit'

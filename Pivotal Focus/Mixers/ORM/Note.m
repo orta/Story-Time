@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import "Note.h"
-
 @implementation Note
 
 //{
@@ -18,12 +16,12 @@
 //    type = datetime;
 //}
 
-@synthesize text, authorString, createdAt, uid, ticket;
+@synthesize text, authorString, uid, ticket;
 
 + (RKObjectMapping *)objectMapping {
     RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
     [objectMapping mapAttributes:@"title", @"url", nil];
-    [objectMapping mapKeyPath:@"noted_at" toAttribute:@"createdAt"];
+//    [objectMapping mapKeyPath:@"noted_at" toAttribute:@"createdAt"];
     [objectMapping mapKeyPath:@"id" toAttribute:@"uid"];
     [objectMapping mapKeyPath:@"authorString" toAttribute:@"author"];
     return objectMapping;

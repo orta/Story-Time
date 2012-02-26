@@ -6,8 +6,6 @@
 //  Copyright 2010 http://www.ortatherox.com. All rights reserved.
 //
 
-#import "Ticket.h"
-
 //<story>
 //<id type="integer">19598265</id>
 //<project_id type="integer">390349</project_id>
@@ -25,9 +23,8 @@
 //</story>
 
 // Called Story in PT
-#import "NoteCollection.h"
-
 @implementation Ticket
+
 @dynamic name, body, tags, uid, url, state, type, project, owner, requester, noteCollection, attachments;
 
 + (RKObjectMapping *)objectMapping {

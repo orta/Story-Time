@@ -10,7 +10,6 @@
 		6032690A14F95035000AA67D /* ProjectCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032690914F95035000AA67D /* ProjectCollection.m */; };
 		604228ED14FAB3F5002986D8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AE792B14F90822002A2AA9 /* CoreData.framework */; };
 		6045A1D414FAC09200AC998F /* PTIngredients.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6045A1D214FAC09200AC998F /* PTIngredients.xcdatamodeld */; };
-		6045A24E14FAC51900AC998F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045A24D14FAC51900AC998F /* CoreDataManager.m */; };
 		6073567314F9598200D7AA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073567214F9598200D7AA74 /* QuartzCore.framework */; };
 		6073567714F95B9100D7AA74 /* AuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6073567514F95B9100D7AA74 /* AuthWindow.xib */; };
 		6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6073567914F95BAC00D7AA74 /* AuthViewController.m */; };
@@ -30,6 +29,7 @@
 		60AE7A3614F92BA1002A2AA9 /* Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A3514F92BA1002A2AA9 /* Defaults.m */; };
 		60AE7A4E14F92DD8002A2AA9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A4D14F92DD8002A2AA9 /* Project.m */; };
 		60CD6E3B14F931D3004CC17D /* ORMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD6E3A14F931D3004CC17D /* ORMObject.m */; };
+		60CEC64514FAF13A0022F822 /* ObserverBlockConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CEC64414FAF13A0022F822 /* ObserverBlockConstants.m */; };
 		60DE9AE114FA7C800063136C /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE9AE014FA7C800063136C /* Note.m */; };
 		60DE9AE414FA7ED10063136C /* NoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE9AE314FA7ED10063136C /* NoteCollection.m */; };
 		60F676D614F9A594001DA705 /* TicketCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F676D514F9A594001DA705 /* TicketCollection.m */; };
@@ -79,8 +79,6 @@
 		6032690814F95035000AA67D /* ProjectCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectCollection.h; path = ORM/ProjectCollection.h; sourceTree = "<group>"; };
 		6032690914F95035000AA67D /* ProjectCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectCollection.m; path = ORM/ProjectCollection.m; sourceTree = "<group>"; };
 		6045A1D314FAC09200AC998F /* PTIngredients.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTIngredients.xcdatamodel; sourceTree = "<group>"; };
-		6045A24C14FAC51900AC998F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
-		6045A24D14FAC51900AC998F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		6073567214F9598200D7AA74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6073567614F95B9100D7AA74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AuthWindow.xib; sourceTree = "<group>"; };
 		6073567814F95BAB00D7AA74 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
@@ -117,6 +115,8 @@
 		60AE7A4D14F92DD8002A2AA9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Mixers/ORM/Project.m; sourceTree = "<group>"; };
 		60CD6E3914F931D3004CC17D /* ORMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORMObject.h; path = ORM/ORMObject.h; sourceTree = "<group>"; };
 		60CD6E3A14F931D3004CC17D /* ORMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORMObject.m; path = ORM/ORMObject.m; sourceTree = "<group>"; };
+		60CEC64314FAF13A0022F822 /* ObserverBlockConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObserverBlockConstants.h; path = Constants/ObserverBlockConstants.h; sourceTree = "<group>"; };
+		60CEC64414FAF13A0022F822 /* ObserverBlockConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObserverBlockConstants.m; path = Constants/ObserverBlockConstants.m; sourceTree = "<group>"; };
 		60DE9ADF14FA7C800063136C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Mixers/ORM/Note.h; sourceTree = "<group>"; };
 		60DE9AE014FA7C800063136C /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Mixers/ORM/Note.m; sourceTree = "<group>"; };
 		60DE9AE214FA7ED10063136C /* NoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteCollection.h; path = ORM/NoteCollection.h; sourceTree = "<group>"; };
@@ -243,8 +243,6 @@
 				60AE798F14F9135C002A2AA9 /* MixerDelegate_Protocols.h */,
 				60AE79B614F91656002A2AA9 /* Mixer.h */,
 				60AE79B714F91656002A2AA9 /* Mixer.m */,
-				6045A24C14FAC51900AC998F /* CoreDataManager.h */,
-				6045A24D14FAC51900AC998F /* CoreDataManager.m */,
 			);
 			path = Mixers;
 			sourceTree = "<group>";
@@ -292,6 +290,8 @@
 			children = (
 				60AE7A3414F92BA1002A2AA9 /* Defaults.h */,
 				60AE7A3514F92BA1002A2AA9 /* Defaults.m */,
+				60CEC64314FAF13A0022F822 /* ObserverBlockConstants.h */,
+				60CEC64414FAF13A0022F822 /* ObserverBlockConstants.m */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -434,7 +434,7 @@
 				60DE9AE114FA7C800063136C /* Note.m in Sources */,
 				60DE9AE414FA7ED10063136C /* NoteCollection.m in Sources */,
 				6045A1D414FAC09200AC998F /* PTIngredients.xcdatamodeld in Sources */,
-				6045A24E14FAC51900AC998F /* CoreDataManager.m in Sources */,
+				60CEC64514FAF13A0022F822 /* ObserverBlockConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +541,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Pivotal Focus/Pivotal Focus-Info.plist";
@@ -561,7 +561,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "Pivotal Focus/Pivotal Focus-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Pivotal Focus/Pivotal Focus-Info.plist";

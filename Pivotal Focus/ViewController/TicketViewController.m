@@ -12,6 +12,10 @@
 @synthesize projects, tickets;
 @dynamic mixer;
 
+- (void)awakeFromNib {
+
+}
+
 - (void)authenticated {
     [self.mixer getProjects];
 }
@@ -26,11 +30,9 @@
     return [[_ticketArrayController selectedObjects] objectAtIndex:0];
 }
 
-
 #pragma mark Mixer Delegate Methods
 
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection {
-    NSLog(@"projects");
     self.projects  = [Project allObjects];
     [self.mixer getTicketsForProject:[self.projects objectAtIndex:0]];
 }
