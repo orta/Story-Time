@@ -27,4 +27,6 @@ static Mixer *sharedMixer;
 
 - (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password{};
 - (void)getProjects{};
+- (void)getTicketsForProject:(Project *)project{};
+
 @end

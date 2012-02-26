@@ -34,7 +34,8 @@
 
 + (RKObjectMapping *)objectMapping {
     RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
-    [objectMapping mapAttributes:@"name", @"labels", @"velocity", @"lastActivity", nil];
+    [objectMapping mapAttributes:@"name", @"labels", @"velocity", nil];
+    [objectMapping mapKeyPath:@"last_activity_at" toAttribute:@"lastActivity"];
     [objectMapping mapKeyPath:@"id" toAttribute:@"uid"];
     return objectMapping;
 }

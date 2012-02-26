@@ -1,18 +1,20 @@
-//
-//  ORMObject.m
+ //
+//  TicketCollection.m
 //  Pivotal Focus
 //
 //  Created by orta therox on 25/02/2012.
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import "ORMObject.h"
+#import "TicketCollection.h"
 
-@implementation ORMObject
+@implementation TicketCollection
+
+@synthesize tickets;
 
 + (RKObjectMapping *)objectMapping {
-    NSLog(@"USING DEFAULT MAPPING FOR %@", self.class);
     RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
+    [objectMapping mapKeyPath:@"story" toRelationship:@"tickets" withMapping:[Ticket objectMapping]];
     return objectMapping;
 }
 

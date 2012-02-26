@@ -9,9 +9,5 @@
 @class PTServer;
 
 @interface PivotalTrackerMixer : Mixer  <RKRequestDelegate, RKObjectLoaderDelegate>
-
 @property (strong) PTServer *server;
-
-- (IBAction)getProjects:(id)sender;
-
 @end

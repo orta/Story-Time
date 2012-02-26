@@ -10,7 +10,7 @@
 #import "MixerDelegate_Protocols.h"
 
 @interface TicketViewController : NSObject <MixerDelegate> {
-    Mixer *mixer;
+    Mixer *_mixer;
 }
 @property (strong) NSArray *projects;
 @property (strong) Mixer *mixer;

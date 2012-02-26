@@ -7,8 +7,15 @@
 //
 
 #import "PTServer.h"
+
 #import "Project.h"
 #import "ProjectCollection.h"
+
+#import "Ticket.h"
+#import "TicketCollection.h"
+
+#import "Note.h"
+#import "NoteCollection.h"
 
 @implementation PTServer
 
@@ -26,6 +33,10 @@
         
         [self.mappingProvider setMapping:[ProjectCollection objectMapping] forKeyPath:@"projects"];
         [self.mappingProvider setMapping:[Project objectMapping] forKeyPath:@"project"];
+        
+        [self.mappingProvider setMapping:[TicketCollection objectMapping] forKeyPath:@"stories"];
+        [self.mappingProvider setMapping:[Ticket objectMapping] forKeyPath:@"story"];
+
     }
     return self;
 }

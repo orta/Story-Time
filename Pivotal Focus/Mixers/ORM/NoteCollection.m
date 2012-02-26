@@ -1,18 +1,20 @@
 //
-//  ORMObject.m
+//  NoteCollection.m
 //  Pivotal Focus
 //
-//  Created by orta therox on 25/02/2012.
+//  Created by orta therox on 26/02/2012.
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import "ORMObject.h"
+#import "NoteCollection.h"
 
-@implementation ORMObject
+@implementation NoteCollection
+
+@synthesize notes;
 
 + (RKObjectMapping *)objectMapping {
-    NSLog(@"USING DEFAULT MAPPING FOR %@", self.class);
     RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
+    [objectMapping mapKeyPath:@"note" toRelationship:@"notes" withMapping:[Project objectMapping]];
     return objectMapping;
 }
 

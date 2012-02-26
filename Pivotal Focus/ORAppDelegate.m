@@ -17,7 +17,6 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     mixer = [[PivotalTrackerMixer alloc] init];
     
-    
     NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:ORAuthToken];
     if (token) {
         [self authenticated];

@@ -13,11 +13,12 @@
 @dynamic mixer;
 
 - (void)authenticated {
-    [mixer getProjects];
+    [self.mixer getProjects];
 }
 
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection {
-   self.projects  = collection.projects;    
+   self.projects  = collection.projects;
+    [self.mixer getTicketsForProject:[self.projects objectAtIndex:0]];
 }
 
 - (IBAction)info:(id)sender {
@@ -27,15 +28,16 @@
 #pragma mark Project management
 
 
+
 #pragma mark Mixer management
 
-- (void)setMixer:(Mixer *)aMixer {
-    mixer = aMixer;
-    mixer.delegate = self;
+- (void)setMixer:(Mixer *)mixer {
+    _mixer = mixer;
+    _mixer.delegate = self;
 }
 
 - (Mixer *)mixer {
-    return mixer;
+    return _mixer;
 }
 
 

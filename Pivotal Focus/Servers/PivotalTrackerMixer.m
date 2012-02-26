@@ -24,15 +24,12 @@
 
 
 - (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    
     NSString *address = @"/tokens/active";
     NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys: username, @"username", password, @"password", nil];
     [_server.client post:address params:params delegate:self];
 }
 
 - (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {
-    NSLog(@"response");    
     if ([response isOK]) {
         NSDictionary *responseDict = [[[RKXMLParserLibXML alloc] init] parseXML:[response bodyAsString]];
         if ([responseDict objectForKey:@"token"]) {
@@ -51,10 +48,6 @@
     }
 }
 
-- (IBAction)getProjects:(id)sender {
-    [self getProjects];
-}
-
 - (void)getProjects {
     [_server loadObjectsAtResourcePath:@"/projects" delegate:self];
 }
@@ -64,11 +57,32 @@
     NSLog(@"ERROR %@", error);
 }
 
-- (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects{    
-    ProjectCollection *collection = [objects objectAtIndex:0];
-    if ([self.delegate respondsToSelector:@selector(mixer:returnedProjectsCollection:)]) {
-        [self.delegate mixer:self returnedProjectsCollection:collection];
+- (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    NSLog(@"%@", objects);
+    id collection = [objects objectAtIndex:0];
+    
+    if ([collection respondsToSelector:@selector(projects)]){
+        ProjectCollection *projects = (ProjectCollection *)collection;
+        if ([self.delegate respondsToSelector:@selector(mixer:returnedProjectsCollection:)]) {
+            [self.delegate mixer:self returnedProjectsCollection:projects];
+        }
     }
+    
+        if ([collection respondsToSelector:@selector(tickets)]) {
+        NSLog(@"Tickets");
+//        ProjectCollection *projects = (ProjectCollection *)collection;
+//        if ([self.delegate respondsToSelector:@selector(mixer:returnedProjectsCollection:)]) {
+//            [self.delegate mixer:self returnedProjectsCollection:collection];
+//        }
+    }
+    
 }
+
+- (void)getTicketsForProject:(Project *)project {
+    NSString *address = [NSString stringWithFormat:@"/projects/%@/stories", project.uid];
+    [_server loadObjectsAtResourcePath:address delegate:self];
+}
+
 
 @end

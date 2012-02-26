@@ -28,6 +28,9 @@
 		60AE7A3614F92BA1002A2AA9 /* Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A3514F92BA1002A2AA9 /* Defaults.m */; };
 		60AE7A4E14F92DD8002A2AA9 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A4D14F92DD8002A2AA9 /* Project.m */; };
 		60CD6E3B14F931D3004CC17D /* ORMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD6E3A14F931D3004CC17D /* ORMObject.m */; };
+		60DE9AE114FA7C800063136C /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE9AE014FA7C800063136C /* Note.m */; };
+		60DE9AE414FA7ED10063136C /* NoteCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE9AE314FA7ED10063136C /* NoteCollection.m */; };
+		60F676D614F9A594001DA705 /* TicketCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F676D514F9A594001DA705 /* TicketCollection.m */; };
 		83AC9DB4054647E99E4504EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE26ACD07FBD4E4793CA1CB0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +114,12 @@
 		60AE7A4D14F92DD8002A2AA9 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = ORM/Project.m; sourceTree = "<group>"; };
 		60CD6E3914F931D3004CC17D /* ORMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORMObject.h; path = ORM/ORMObject.h; sourceTree = "<group>"; };
 		60CD6E3A14F931D3004CC17D /* ORMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORMObject.m; path = ORM/ORMObject.m; sourceTree = "<group>"; };
+		60DE9ADF14FA7C800063136C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Mixers/ORM/Note.h; sourceTree = "<group>"; };
+		60DE9AE014FA7C800063136C /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Mixers/ORM/Note.m; sourceTree = "<group>"; };
+		60DE9AE214FA7ED10063136C /* NoteCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteCollection.h; path = ORM/NoteCollection.h; sourceTree = "<group>"; };
+		60DE9AE314FA7ED10063136C /* NoteCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteCollection.m; path = ORM/NoteCollection.m; sourceTree = "<group>"; };
+		60F676D414F9A594001DA705 /* TicketCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketCollection.h; path = ORM/TicketCollection.h; sourceTree = "<group>"; };
+		60F676D514F9A594001DA705 /* TicketCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketCollection.m; path = ORM/TicketCollection.m; sourceTree = "<group>"; };
 		EE26ACD07FBD4E4793CA1CB0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,6 +225,8 @@
 				60AE799714F913FE002A2AA9 /* Server.m */,
 				60AE798C14F91307002A2AA9 /* Ticket.h */,
 				60AE798D14F91307002A2AA9 /* Ticket.m */,
+				60DE9ADF14FA7C800063136C /* Note.h */,
+				60DE9AE014FA7C800063136C /* Note.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -263,6 +274,10 @@
 				60AE7A4D14F92DD8002A2AA9 /* Project.m */,
 				6032690814F95035000AA67D /* ProjectCollection.h */,
 				6032690914F95035000AA67D /* ProjectCollection.m */,
+				60F676D414F9A594001DA705 /* TicketCollection.h */,
+				60F676D514F9A594001DA705 /* TicketCollection.m */,
+				60DE9AE214FA7ED10063136C /* NoteCollection.h */,
+				60DE9AE314FA7ED10063136C /* NoteCollection.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -411,6 +426,9 @@
 				6032690A14F95035000AA67D /* ProjectCollection.m in Sources */,
 				6073567A14F95BAC00D7AA74 /* AuthViewController.m in Sources */,
 				607356B614F9709A00D7AA74 /* TicketViewController.m in Sources */,
+				60F676D614F9A594001DA705 /* TicketCollection.m in Sources */,
+				60DE9AE114FA7C800063136C /* Note.m in Sources */,
+				60DE9AE414FA7ED10063136C /* NoteCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

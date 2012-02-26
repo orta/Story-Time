@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 ortatherox.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@class Project;
 
 @interface Mixer : NSObject
 
@@ -17,5 +17,5 @@
 
 - (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password;
 - (void)getProjects;
-
+- (void)getTicketsForProject:(Project *)project;
 @end
