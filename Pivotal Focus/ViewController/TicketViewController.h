@@ -11,10 +11,16 @@
 
 @interface TicketViewController : NSObject <MixerDelegate> {
     Mixer *_mixer;
+    
+    IBOutlet NSArrayController *_projectArrayController;
+    IBOutlet NSArrayController *_ticketArrayController;
 }
+
 @property (strong) NSArray *projects;
+@property (strong) NSArray *tickets;
 @property (strong) Mixer *mixer;
 
+- (Project *)currentProject;
 - (void)authenticated;
 - (IBAction)info:(id)sender;
 @end

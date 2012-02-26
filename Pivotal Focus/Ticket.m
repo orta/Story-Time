@@ -32,7 +32,8 @@
 
 + (RKObjectMapping *)objectMapping {
     RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
-    [objectMapping mapAttributes:@"title", @"url", nil];
+    [objectMapping mapAttributes: @"url", nil];
+    [objectMapping mapKeyPath:@"name" toAttribute:@"title"];
     [objectMapping mapKeyPath:@"description" toAttribute:@"body"];
     [objectMapping mapKeyPath:@"created_at" toAttribute:@"createdAt"];
     [objectMapping mapKeyPath:@"current_state" toAttribute:@"state"];

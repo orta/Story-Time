@@ -8,6 +8,7 @@
 
 @class Mixer;
 @class ProjectCollection;
+@class TicketCollection;
 
 @protocol MixerAuthDelegate <NSObject>
 - (void)mixer:(Mixer *)mixer DidLoginWithAuthToken:(NSString *)token;
@@ -16,4 +17,5 @@
 
 @protocol MixerDelegate <NSObject>
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection;
+- (void)mixer:(Mixer *)mixer returnedTicketCollection:(TicketCollection *)collection;
 @end

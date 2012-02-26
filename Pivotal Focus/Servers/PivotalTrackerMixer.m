@@ -69,12 +69,11 @@
         }
     }
     
-        if ([collection respondsToSelector:@selector(tickets)]) {
-        NSLog(@"Tickets");
-//        ProjectCollection *projects = (ProjectCollection *)collection;
-//        if ([self.delegate respondsToSelector:@selector(mixer:returnedProjectsCollection:)]) {
-//            [self.delegate mixer:self returnedProjectsCollection:collection];
-//        }
+    if ([collection respondsToSelector:@selector(tickets)]) {
+        TicketCollection *tickets = (TicketCollection *)collection;
+        if ([self.delegate respondsToSelector:@selector(mixer:returnedTicketCollection:)]) {
+            [self.delegate mixer:self returnedTicketCollection:tickets];
+        }
     }
     
 }

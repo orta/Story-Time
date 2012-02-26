@@ -13,12 +13,13 @@
 // models
 #import "Server.h"
 #import "Ticket.h"
+#import "Project.h"
 #import "Mixer.h"
 
-// ORM Models
+// Things that should eventually be hidden
 #import "ORMObject.h"
-#import "Project.h"
 #import "ProjectCollection.h"
+#import "TicketCollection.h"
 
 // constants
 #import "Defaults.h"

@@ -9,25 +9,33 @@
 #import "TicketViewController.h"
 
 @implementation TicketViewController
-@synthesize projects;
+@synthesize projects, tickets;
 @dynamic mixer;
 
 - (void)authenticated {
     [self.mixer getProjects];
 }
 
+#pragma mark helpers
+
+- (Project *)currentProject {
+   return [[_projectArrayController selectedObjects] objectAtIndex:0];
+}
+
+#pragma mark Mixer Delegate Methods
+
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection {
    self.projects  = collection.projects;
     [self.mixer getTicketsForProject:[self.projects objectAtIndex:0]];
 }
 
+- (void)mixer:(Mixer *)mixer returnedTicketCollection:(TicketCollection *)collection {
+    self.tickets = collection.tickets;
+}
+
 - (IBAction)info:(id)sender {
     NSLog(@" array %@", self.projects);
 }
-
-#pragma mark Project management
-
-
 
 #pragma mark Mixer management
 
