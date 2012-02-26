@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ORMObject : NSObject
+@interface ORMObject : NSManagedObject
+@property (nonatomic, retain) NSDate * createdAt;
+@property (nonatomic, retain) NSDate * updatedAt;
+
 + (RKObjectMapping *)objectMapping;
 @end

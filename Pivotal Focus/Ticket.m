@@ -28,19 +28,19 @@
 #import "NoteCollection.h"
 
 @implementation Ticket
-@synthesize name, body, tags, uid, url, state, type, createdAt, project, owner, requester, noteCollection, attachments;
+@dynamic name, body, tags, uid, url, state, type, project, owner, requester, noteCollection, attachments;
 
 + (RKObjectMapping *)objectMapping {
-    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
+    RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapAttributes: @"url", nil];
     [objectMapping mapKeyPath:@"name" toAttribute:@"name"];
     [objectMapping mapKeyPath:@"description" toAttribute:@"body"];
-    [objectMapping mapKeyPath:@"created_at" toAttribute:@"createdAt"];
     [objectMapping mapKeyPath:@"current_state" toAttribute:@"state"];
     [objectMapping mapKeyPath:@"id" toAttribute:@"uid"];
     [objectMapping mapKeyPath:@"owned_by" toAttribute:@"owner"];
     [objectMapping mapKeyPath:@"requested_by" toAttribute:@"requester"];
     [objectMapping mapKeyPath:@"notes" toRelationship:@"noteCollection" withMapping: [NoteCollection objectMapping]];
+    objectMapping.primaryKeyAttribute = @"uid";
 
     return objectMapping;
 }

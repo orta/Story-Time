@@ -30,17 +30,17 @@
 #pragma mark Mixer Delegate Methods
 
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection {
-   self.projects  = collection.projects;
+    NSLog(@"projects");
+    self.projects  = [Project allObjects];
     [self.mixer getTicketsForProject:[self.projects objectAtIndex:0]];
 }
 
 - (void)mixer:(Mixer *)mixer returnedTicketCollection:(TicketCollection *)collection {
-    self.tickets = collection.tickets;
+    self.tickets = [Ticket allObjects];
 }
 
 - (IBAction)info:(id)sender {
-    NSLog(@" project %@", [self currentProject].name );
-    NSLog(@" ticket %@", [self currentTicket].name );
+    NSLog(@" project %@", [Project allObjects] );
 }
 
 #pragma mark Mixer management

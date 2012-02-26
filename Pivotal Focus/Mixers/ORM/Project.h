@@ -11,7 +11,7 @@
 @interface Project : ORMObject
 
 @property (strong) NSString *name;
-@property (strong) NSString *uid;
+@property (strong) NSNumber *uid;
 @property (strong) NSString *labels;
 @property (strong) NSNumber *velocity;
 @property (strong) NSDate *lastActivity;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11D50b" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Note" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="noteCollection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NoteCollection" inverseName="notes" inverseEntity="NoteCollection" syncable="YES"/>
+    </entity>
+    <entity name="NoteCollection" syncable="YES">
+        <relationship name="notes" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="noteCollection" inverseEntity="Note" syncable="YES"/>
+        <relationship name="ticket" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Ticket" inverseName="noteCollection" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="labels" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastActivity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="velocity" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="projectCollection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectCollection" inverseName="projects" inverseEntity="ProjectCollection" syncable="YES"/>
+        <relationship name="ticketCollection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TicketCollection" inverseName="project" inverseEntity="TicketCollection" syncable="YES"/>
+    </entity>
+    <entity name="ProjectCollection" syncable="YES">
+        <relationship name="projects" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="projectCollection" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Ticket" representedClassName="Ticket" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="requester" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="collection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TicketCollection" inverseName="tickets" inverseEntity="TicketCollection" syncable="YES"/>
+        <relationship name="noteCollection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="NoteCollection" inverseName="ticket" inverseEntity="NoteCollection" syncable="YES"/>
+    </entity>
+    <entity name="TicketCollection" syncable="YES">
+        <relationship name="project" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="ticketCollection" inverseEntity="Project" syncable="YES"/>
+        <relationship name="tickets" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Ticket" inverseName="collection" inverseEntity="Ticket" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Note" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="NoteCollection" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Project" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="ProjectCollection" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Ticket" positionX="160" positionY="192" width="128" height="210"/>
+        <element name="TicketCollection" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>

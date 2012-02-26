@@ -9,6 +9,7 @@
 #import "ORMObject.h"
 
 @implementation ORMObject
+@dynamic createdAt, updatedAt;
 
 + (RKObjectMapping *)objectMapping {
     NSLog(@"USING DEFAULT MAPPING FOR %@", self.class);

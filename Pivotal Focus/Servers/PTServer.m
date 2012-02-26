@@ -21,7 +21,8 @@
 
 - (id)init {
     self = [super initWithBaseURL:@"https://www.pivotaltracker.com/services/v3/"];
-
+    
+    
     if (self) {
         NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:ORAuthToken];
         if (token) {
@@ -29,6 +30,13 @@
             [self.client setValue:token forHTTPHeaderField:@"X-TrackerToken"];
         }
         
+        [RKObjectManager setSharedManager: self];
+        RKManagedObjectStore* objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"PTDataStore.sqlite"];
+        self.objectStore = objectStore;
+
+        
+        NSLog(@"store %@", self.objectStore);
+
         self.acceptMIMEType = @"application/xml";   
         
         [self.mappingProvider setMapping:[ProjectCollection objectMapping] forKeyPath:@"projects"];
@@ -36,6 +44,9 @@
         
         [self.mappingProvider setMapping:[TicketCollection objectMapping] forKeyPath:@"stories"];
         [self.mappingProvider setMapping:[Ticket objectMapping] forKeyPath:@"story"];
+        
+        
+        NSLog(@"afasfasfasf");
 
     }
     return self;

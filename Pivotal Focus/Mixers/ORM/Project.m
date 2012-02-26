@@ -30,13 +30,14 @@
 #import "Project.h"
 
 @implementation Project
-@synthesize name, uid, labels, velocity, lastActivity;
+@dynamic name, uid, labels, velocity, lastActivity;
 
 + (RKObjectMapping *)objectMapping {
-    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
+    RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapAttributes:@"name", @"labels", @"velocity", nil];
     [objectMapping mapKeyPath:@"last_activity_at" toAttribute:@"lastActivity"];
     [objectMapping mapKeyPath:@"id" toAttribute:@"uid"];
+    objectMapping.primaryKeyAttribute = @"uid";
     return objectMapping;
 }
 

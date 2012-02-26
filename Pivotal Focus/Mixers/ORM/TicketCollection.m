@@ -13,7 +13,7 @@
 @synthesize tickets;
 
 + (RKObjectMapping *)objectMapping {
-    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
+    RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapKeyPath:@"story" toRelationship:@"tickets" withMapping:[Ticket objectMapping]];
     return objectMapping;
 }
