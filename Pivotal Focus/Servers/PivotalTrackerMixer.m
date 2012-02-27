@@ -10,6 +10,8 @@
 #import "PTServer.h"
 #import <RestKit/RKXMLParserLibXML.h>
 
+static PivotalTrackerMixer *sharedMixer;
+
 @implementation PivotalTrackerMixer
 
 @synthesize server = _server;
@@ -17,11 +19,20 @@
 - (id)init {
     self = [super init];
     if (self) {
+        static dispatch_once_t pred;
+        dispatch_once(&pred, ^{ 
+            sharedMixer = self;
+        } );
+
         self.server = [PTServer new];
     }
     return self;
 }
 
+
++ (PivotalTrackerMixer*) sharedMixer {
+    return sharedMixer;
+}
 
 - (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password {
     NSString *address = @"/tokens/active";
@@ -79,6 +90,8 @@
 }
 
 - (void)getTicketsForProject:(Project *)project {
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), project);
+    
     NSString *address = [NSString stringWithFormat:@"/projects/%@/stories", project.uid];
     [_server loadObjectsAtResourcePath:address delegate:self];
 }

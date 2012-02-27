@@ -9,5 +9,6 @@
 @class PTServer;
 
 @interface PivotalTrackerMixer : Mixer  <RKRequestDelegate, RKObjectLoaderDelegate>
++ (PivotalTrackerMixer*) sharedMixer;
 @property (strong) PTServer *server;
 @end

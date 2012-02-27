@@ -18,12 +18,13 @@
 
 @synthesize text, authorString, uid, ticket;
 
-+ (RKObjectMapping *)objectMapping {
-    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
++ (RKManagedObjectMapping *)objectMapping {
+    RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapAttributes:@"title", @"url", nil];
 //    [objectMapping mapKeyPath:@"noted_at" toAttribute:@"createdAt"];
     [objectMapping mapKeyPath:@"id" toAttribute:@"uid"];
     [objectMapping mapKeyPath:@"authorString" toAttribute:@"author"];
+    objectMapping.primaryKeyAttribute = @"uid";
     return objectMapping;
 }
 

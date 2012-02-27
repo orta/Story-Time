@@ -9,9 +9,9 @@
 @implementation ORMObject
 @dynamic createdAt, updatedAt;
 
-+ (RKObjectMapping *)objectMapping {
++ (RKManagedObjectMapping *)objectMapping {
     NSLog(@"USING DEFAULT MAPPING FOR %@", self.class);
-    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
+    RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     return objectMapping;
 }
 

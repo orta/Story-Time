@@ -10,8 +10,8 @@
 
 @synthesize notes;
 
-+ (RKObjectMapping *)objectMapping {
-    RKObjectMapping *objectMapping = [RKObjectMapping mappingForClass:[self class]];
++ (RKManagedObjectMapping *)objectMapping {
+    RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapKeyPath:@"note" toRelationship:@"notes" withMapping:[Project objectMapping]];
     return objectMapping;
 }

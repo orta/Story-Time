@@ -12,7 +12,7 @@
 
 @synthesize projects;
 
-+ (RKObjectMapping *)objectMapping {
++ (RKManagedObjectMapping *)objectMapping {
     RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapKeyPath:@"project" toRelationship:@"projects" withMapping:[Project objectMapping]];
     return objectMapping;

@@ -8,19 +8,28 @@
 
 #import "ObserverBlockConstants.h"
 #import "TicketViewController.h"
+#import "PivotalTrackerMixer.h"
 
 @implementation TicketViewController
 @synthesize projects, tickets;
 @dynamic mixer;
 
-- (void)awakeFromNib {
-    [self addObserverForKeyPath:@"_projectArrayController.selectedIndex" identifier:ORProjectChangedBlock task:^(id obj, NSDictionary *change) {
-        NSLog(@"change");
-    }];
-}
+- (void)authenticated {    
+    if (![[Project allObjects] count]) {
+        [self.mixer getProjects];
+    }else{
+        self.projects  = [Project allObjects];
+        NSLog(@"%@ ", self.projects);
+    }
+    
+    [_projectArrayController addObserverForKeyPath:@"selectionIndex" identifier:ORProjectChangedBlock task:^(id obj, NSDictionary *change) {
 
-- (void)authenticated {
-    [self.mixer getProjects];
+        [Ticket truncateAll];
+        
+        NSArrayController* projectsAC = obj;
+        Mixer *mixer = [PivotalTrackerMixer sharedMixer];
+        [mixer getTicketsForProject:[projectsAC.selectedObjects objectAtIndex:0]];        
+    }];
 }
 
 #pragma mark helpers
@@ -37,7 +46,6 @@
 
 - (void)mixer:(Mixer *)mixer returnedProjectsCollection:(ProjectCollection *)collection {
     self.projects  = [Project allObjects];
-    [self.mixer getTicketsForProject:[self.projects objectAtIndex:0]];
 }
 
 - (void)mixer:(Mixer *)mixer returnedTicketCollection:(TicketCollection *)collection {

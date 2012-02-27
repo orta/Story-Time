@@ -30,7 +30,7 @@
 @implementation Project
 @dynamic name, uid, labels, velocity, lastActivity;
 
-+ (RKObjectMapping *)objectMapping {
++ (RKManagedObjectMapping *)objectMapping {
     RKManagedObjectMapping *objectMapping = [RKManagedObjectMapping mappingForClass:[self class]];
     [objectMapping mapAttributes:@"name", @"labels", @"velocity", nil];
     [objectMapping mapKeyPath:@"last_activity_at" toAttribute:@"lastActivity"];
@@ -38,5 +38,7 @@
     objectMapping.primaryKeyAttribute = @"uid";
     return objectMapping;
 }
+
+
 
 @end
